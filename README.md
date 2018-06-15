@@ -1,2 +1,3 @@
 # Netflix-Clone
-Netflix
+
+Netflix clone feito com a intenção de aprender.
