@@ -435,7 +435,8 @@ button{
 #header-ali{
     width: 100%;
     height: 60px;
-    background: rgba(0,0,0,.50)
+    background: rgba(0,0,0,.50);
+    position: fixed;
 }
 
 #netflix-logodash{
@@ -452,4 +453,19 @@ button{
     top: 10px;
     position: relative;
     transform: scale(0.7);
+}
+
+/*Dashboard*/
+
+.destaque{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.destaque .logo{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    margin: 200px 50px;
 }

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 22:43
+-- Generation Time: 16-Jun-2018 às 22:53
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -39,6 +39,13 @@ CREATE TABLE `filmes` (
   `age` text NOT NULL,
   `genero` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `filmes`
+--
+
+INSERT INTO `filmes` (`id`, `name`, `synopse`, `logo`, `background`, `video`, `year`, `age`, `genero`) VALUES
+(1, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', '', '2018', '2018', '3,11');
 
 -- --------------------------------------------------------
 
@@ -189,7 +196,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `filmes`
 --
 ALTER TABLE `filmes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `genre`
