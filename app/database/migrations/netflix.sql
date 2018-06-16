@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 17:30
+-- Generation Time: 16-Jun-2018 às 19:45
 -- Versão do servidor: 10.1.33-MariaDB
--- PHP Version: 7.1.18
+-- PHP Version: 7.2.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -37,6 +37,18 @@ CREATE TABLE `filmes` (
   `video` text NOT NULL,
   `year` text NOT NULL,
   `age` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `perfil`
+--
+
+CREATE TABLE `perfil` (
+  `id` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -82,6 +94,13 @@ CREATE TABLE `users` (
   `admin` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Extraindo dados da tabela `users`
+--
+
+INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `admin`) VALUES
+(8, 'netflix_85d9235d10cf197950d843e56b47021ff02b0cee', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0);
+
 -- --------------------------------------------------------
 
 --
@@ -104,6 +123,12 @@ CREATE TABLE `videos` (
 -- Indexes for table `filmes`
 --
 ALTER TABLE `filmes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `perfil`
+--
+ALTER TABLE `perfil`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -141,6 +166,12 @@ ALTER TABLE `filmes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `perfil`
+--
+ALTER TABLE `perfil`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `season`
 --
 ALTER TABLE `season`
@@ -156,7 +187,7 @@ ALTER TABLE `series`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `videos`
