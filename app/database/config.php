@@ -1,24 +1,11 @@
 <?php
-    abstract class PDORepository{
-        const USERNAME="root";
-        const PASSWORD="";
-        const HOST="localhost";
-        const DB="netflix";
-
-        private function getConnection(){
-            $username = self::USERNAME;
-            $password = self::PASSWORD;
-            $host = self::HOST;
-            $db = self::DB;
-            $connection = new PDO("mysql:dbname=$db;host=$host", $username, $password);
-            return $connection;
-        }
-        protected function queryList($sql, $args){
-            $connection = $this->getConnection();
-            $stmt = $connection->prepare($sql);
-            $stmt->execute($args);
-            return $stmt;
-        }
+    $host = 'localhost';
+    $user = 'root';
+    $password = '';
+    $database = 'netflix';
+    $mysqli = new mysqli();
+    $mysqli->connect($host, $user, $password, $database);
+    if (mysqli_connect_errno()) {
+        exit('Connect failed: '. mysqli_connect_error());
     }
-
 ?>

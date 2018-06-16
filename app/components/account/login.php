@@ -7,13 +7,19 @@
 			<div id="padding-40">
 				<h1>Entrar</h1>
 				<div id="form">
+				<form method='post' action="">
 					<span>Email</span><br/>
-					<input type="text"/>
+					<input id="lemail" type="text"/>
 					<br>
 					<span>Senha</span><br/>
-					<input type="password"/>
+					<input id="lsenha" type="password"/>
 				<a href="/forgot" id="forgot">Esqueceu seu email ou senha?</a>
 				<button id="btn-red-login">Entrar</button>
+				</form>
+
+
+		<div id="message">
+		</div>
 
 				<p class="novo_aqui">Novo por aqui? <a href="/register">Cadastre-se agora.</a>  </p>
 

@@ -262,6 +262,17 @@ button{
     height: 44px;
 }
 
+#account-login #message{
+    width: 95%;
+    height: auto;
+    background: red;
+    color: #fff;
+    position: relative;
+    bottom: 40px;
+    padding: 10px;
+    display: none;
+}
+
 #btn-red-login{
     color: #fff;
     background-color: #e50914;
