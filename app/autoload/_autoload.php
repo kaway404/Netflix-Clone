@@ -3,6 +3,7 @@ session_start();
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	include './app/system/account_ok.php';
 	if(isset($_COOKIE['perfil'])){
+	include './app/system/perfil_ok.php';
 	include './app/components/dashboard/dashboard.php';
 	}
 	else{
