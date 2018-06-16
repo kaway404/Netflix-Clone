@@ -6,4 +6,4 @@ Prints do layout
 
 [Página home]
 
-![alt text](https://github.com/kaway404/Netflix-Clone/blob/master/apresentar/home_index.png?raw=true)
+![alt text](https://github.com/kaway404/Netflix-Clone/blob/master/apresentar/home_index2.png?raw=true)
