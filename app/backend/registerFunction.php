@@ -37,7 +37,15 @@
 
 			if (mysqli_query($conn, $sql)) {
 			    echo "Cadastrado com sucesso";
-			    echo '<script>location.href="/login";</script>';
+		$result_usuario = "SELECT * FROM users WHERE email = '$email' && password = '$passwordcry' LIMIT 1";
+        $resultado_usuario = mysqli_query($conn, $result_usuario);
+        $resultado = mysqli_fetch_assoc($resultado_usuario);
+        if(isset($resultado)){
+            setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
+            setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
+            echo 'Estamos redirecionando você';
+            echo '<script>location.href="/browse";</script>';
+        }
 			} else {
 			    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
