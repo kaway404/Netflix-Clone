@@ -1,0 +1,1 @@
+Crie um banco de dados com o nome netflix e importe esse .sql
