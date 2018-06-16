@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 19:45
+-- Generation Time: 16-Jun-2018 às 22:42
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -36,8 +36,42 @@ CREATE TABLE `filmes` (
   `background` text NOT NULL,
   `video` text NOT NULL,
   `year` text NOT NULL,
-  `age` text NOT NULL
+  `age` text NOT NULL,
+  `genero` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `genre`
+--
+
+CREATE TABLE `genre` (
+  `id` int(11) NOT NULL,
+  `nome` text NOT NULL,
+  `ativo` int(11) NOT NULL,
+  `status` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `genre`
+--
+
+INSERT INTO `genre` (`id`, `nome`, `ativo`, `status`) VALUES
+(1, 'Ação', 1, 0),
+(2, 'Aventura', 1, 0),
+(3, 'Comédia', 1, 0),
+(4, 'Animação', 1, 0),
+(5, 'Documentário', 1, 0),
+(6, 'Fantasia', 1, 0),
+(7, 'Faroeste – Western', 1, 0),
+(8, 'Ficção científica', 1, 0),
+(9, 'Guerra', 1, 0),
+(10, 'Musicais', 1, 0),
+(11, 'Romance', 1, 0),
+(12, 'Suspense', 1, 0),
+(13, 'Terror', 1, 0),
+(14, 'Tragédia/Drama', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -50,6 +84,13 @@ CREATE TABLE `perfil` (
   `iduser` int(11) NOT NULL,
   `name` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `perfil`
+--
+
+INSERT INTO `perfil` (`id`, `iduser`, `name`) VALUES
+(16, 11, 'Alexandre');
 
 -- --------------------------------------------------------
 
@@ -99,7 +140,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `admin`) VALUES
-(8, 'netflix_85d9235d10cf197950d843e56b47021ff02b0cee', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0);
+(11, 'netflix_85d9235d10cf197950d843e56b47021ff02b0cee', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -123,6 +164,12 @@ CREATE TABLE `videos` (
 -- Indexes for table `filmes`
 --
 ALTER TABLE `filmes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `genre`
+--
+ALTER TABLE `genre`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -166,10 +213,16 @@ ALTER TABLE `filmes`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
+-- AUTO_INCREMENT for table `genre`
+--
+ALTER TABLE `genre`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
 -- AUTO_INCREMENT for table `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `season`
@@ -187,7 +240,7 @@ ALTER TABLE `series`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `videos`
