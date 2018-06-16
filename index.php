@@ -1,7 +1,6 @@
 <?php
 include './app/database/config.php';
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>

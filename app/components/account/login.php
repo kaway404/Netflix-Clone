@@ -11,7 +11,7 @@
 					<input type="text"/>
 					<br>
 					<span>Senha</span><br/>
-					<input type="text"/>
+					<input type="password"/>
 				<a href="/forgot" id="forgot">Esqueceu seu email ou senha?</a>
 				<button id="btn-red-login">Entrar</button>
 
