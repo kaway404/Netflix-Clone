@@ -3,7 +3,7 @@
 	</div>
 
 	<div class="center quem_assistir">
-		<h1>Editar perfil</h1>
+		<h1>Editando perfil</h1>
 
 		<center>
 		<?php
