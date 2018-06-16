@@ -1,6 +1,7 @@
 <?php include '../database/config.php';
 
 $name = $_POST['name'];
+if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 
 if($_POST['name']==""){
 	echo ('Preencha o campo Nome');	
@@ -27,4 +28,5 @@ if($_POST['name']!=""){
 			}
 		}
 	}
+}
 	?>

@@ -8,4 +8,5 @@ RewriteRule ^createprofile /index.php?createprofile[L]
 RewriteRule ^logando /app/backend/loginFunction.php
 RewriteRule ^registro /app/backend/registerFunction.php
 RewriteRule ^newprofile /app/backend/newProfile.php
+RewriteRule ^swift/(.*)$ /app/backend/swift.php?id=$1 [L]
 </IfModule>

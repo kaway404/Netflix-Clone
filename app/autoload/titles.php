@@ -7,10 +7,18 @@ elseif(isset($_GET['register'])){
 }
 elseif(isset($_GET['dashboard'])){
 	echo '<title>Netflix</title>';
+	echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
+}
+elseif(isset($_GET['browse'])){
+	echo '<title>Netflix</title>';
+	echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
 }
 elseif(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	if(isset($_COOKIE['perfil'])){
 		echo '<title>Netflix</title>';
+		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
+	}
+	else if(empty($_COOKIE['perfil'])){
 		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
 	}
 	else{

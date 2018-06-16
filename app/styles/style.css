@@ -410,3 +410,27 @@ button{
     display: none;
     left: -8px;
 }
+
+/*Dashboard*/
+
+#header-ali{
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,.50)
+}
+
+#netflix-logodash{
+    height: 45px;
+    width: 147px;
+    vertical-align: middle;
+    text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+    cursor: pointer;
+    left: 40px;
+    top: 10px;
+    position: relative;
+    transform: scale(0.7);
+}

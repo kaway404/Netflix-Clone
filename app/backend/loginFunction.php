@@ -16,8 +16,8 @@
         $resultado_usuario = mysqli_query($conn, $result_usuario);
         $resultado = mysqli_fetch_assoc($resultado_usuario);
         if(isset($resultado)){
-            setcookie("iduser", $resultado['id'], time()+7200);
-            setcookie("cry", $resultado['cry'], time()+7200);
+            setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
+            setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
             echo 'Estamos redirecionando você';
             echo '<script>location.href="/browse";</script>';
         }
