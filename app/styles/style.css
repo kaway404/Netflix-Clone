@@ -181,3 +181,13 @@ button{
     color: #777 !important;
     fill: #777 !important;
 }
+
+/*Login*/
+
+.background-login{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/app/img/login-the-crown_2.jpg);
+    background-size: cover;
+}

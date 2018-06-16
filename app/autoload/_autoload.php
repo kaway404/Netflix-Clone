@@ -4,7 +4,7 @@ if(isset($_COOKIE['iduser'])){
 }
 else{
 if(isset($_GET['login'])){
-	include '/app/components/account/login.php';
+	include './app/components/account/login.php';
 }
 elseif(isset($_GET['register'])){
 	include './app/components/account/register.php';
