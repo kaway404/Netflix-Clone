@@ -6,12 +6,30 @@
 		<h1>Quem está assistindo?</h1>
 
 		<center>
+		<?php
+		$iduser = $_COOKIE['iduser'];
+		$result_perfil = "SELECT * FROM perfil WHERE iduser = '$iduser' LIMIT 4";
+        $resultado_perfil = mysqli_query($conn, $result_perfil);
+        $resultado = mysqli_fetch_assoc($resultado_perfil);
+        $totaldeperfil = mysqli_num_rows($resultado_perfil);
+        if($totaldeperfil == 4){
+		?>
+		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
 		<li class="avatar1">
-		<p>Alexandre</p>
+		<p><?php echo $resultado_perfils['name'];?></p>
 		</li>
+		<?php } ?>
+		<?php }
+		else{?>
+		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
 		<li class="avatar1">
-		<p>Alexandre</p>
+		<p><?php echo $resultado_perfils['name'];?></p>
 		</li>
+		<?php } ?>
+		<li class="added">
+		<p>Adicionar perfil</p>
+		</li>
+		<?php }?>
 		</center>
 
 	</div>

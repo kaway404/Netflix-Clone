@@ -336,11 +336,10 @@ button{
     box-sizing: border-box;
     position: relative;
     text-decoration: none;
-    border: .3em solid rgba(0,0,0,.4);
+    border: .3em solid grey;
     background-repeat: no-repeat;
     -moz-background-size: cover;
     background-size: cover;
-    background-color: #333;
     top: 30px;
     cursor: pointer;
     display: inline-block;
@@ -349,7 +348,7 @@ button{
 }
 
 .quem_assistir li:hover{
-    border: .3em solid #fff;
+    border: .3em solid grey;
 }
 
 .quem_assistir li p{
@@ -361,6 +360,11 @@ button{
 
 .quem_assistir .avatar1{
     background-image: url(/app/img/user/user1.png);
+}
+
+.quem_assistir .added{
+    background-image: url(/app/img/user/plus.png);
+    border: .3em solid transparent;
 }
 
 .gerenc{
