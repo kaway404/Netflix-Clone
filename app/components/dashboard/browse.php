@@ -7,14 +7,14 @@
 
 		<center>
 		<li class="avatar1">
+		<p>Alexandre</p>
 		</li>
 		<li class="avatar1">
+		<p>Alexandre</p>
 		</li>
-		<li class="avatar1">
-		</li>
-		<li class="avatar1">
-		</li>
-		<button class="gerenc">GERENCIAR PERFIS</button>
 		</center>
 
 	</div>
+<center>
+	<button class="gerenc">GERENCIAR PERFIS</button>
+</center>

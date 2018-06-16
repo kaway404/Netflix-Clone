@@ -311,7 +311,7 @@ button{
 }
 
 .quem_assistir{
-    width: 50%;
+    width: 60%;
     height: 400px;
     position: relative;
     top: 10vw;
@@ -343,12 +343,20 @@ button{
     background-color: #333;
     top: 30px;
     cursor: pointer;
-    float: left;
+    display: inline-block;
     margin-left: 30px;
+    left: -30px;
 }
 
 .quem_assistir li:hover{
     border: .3em solid #fff;
+}
+
+.quem_assistir li p{
+    color: grey;
+    position: relative;
+    top: 145px;
+    font-size: 1.2em;
 }
 
 .quem_assistir .avatar1{
@@ -366,8 +374,10 @@ button{
     background: transparent;
     color: grey;
     position: relative;
-    top: 8vw;
+    top: 3vw;
+    margin: 0px auto;
 }
+
 
 .gerenc:hover{
     color: #fff;
