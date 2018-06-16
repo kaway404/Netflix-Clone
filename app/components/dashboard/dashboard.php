@@ -9,7 +9,6 @@
     if(isset($filme)){
     ?>
 
-
 	<div class="destaque">
 		<img class="logo" src="<?php echo $filme['logo'];?>"/>
 	</div>

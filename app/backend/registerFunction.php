@@ -18,7 +18,7 @@
 		echo ('Preencha os campos');	
 	}
 	elseif($_POST['senha']==""){
-		echo j('Preencha os campos');	
+		echo ('Preencha os campos');	
 	}
 
 	if($_POST['email']!=""){
