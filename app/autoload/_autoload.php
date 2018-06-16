@@ -13,6 +13,9 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	if(isset($_GET['browse'])){
 	include './app/components/dashboard/browse.php';
 	}
+	elseif(isset($_GET['createprofile'])){
+		include './app/components/dashboard/create_profile.php';
+	}
 	else{
 	include './app/components/dashboard/browse.php';
 	}

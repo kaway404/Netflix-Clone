@@ -314,7 +314,7 @@ button{
     width: 60%;
     height: 400px;
     position: relative;
-    top: 10vw;
+    top: 7vw;
 }
 
 .quem_assistir h1{
@@ -386,4 +386,27 @@ button{
 .gerenc:hover{
     color: #fff;
     border: 1px solid #fff;
+}
+
+/*Criar perfil*/
+
+.quem_assistir input{
+    width: 250px;
+    position: relative;
+    top: 150px;
+    left: -60px;
+    height: 25px;
+    padding-left: 10px;
+}
+
+.quem_assistir #message{
+    width: 250px;
+    height: auto;
+    background: red;
+    color: #fff;
+    position: relative;
+    bottom: -50px;
+    padding: 10px;
+    display: none;
+    left: -8px;
 }

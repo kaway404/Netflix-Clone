@@ -3,7 +3,7 @@
 	</div>
 
 	<div class="center quem_assistir">
-		<h1>Quem está assistindo?</h1>
+		<h1>Criar um perfil</h1>
 
 		<center>
 		<?php
@@ -13,26 +13,22 @@
         $resultado = mysqli_fetch_assoc($resultado_perfil);
         $totaldeperfil = mysqli_num_rows($resultado_perfil);
         if($totaldeperfil == 4){
-		?>
-		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo $resultado_perfils['name'];?></p>
-		</li></a>
-		<?php } ?>
-		<?php }
-		else{?>
-		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo $resultado_perfils['name'];?></p>
-		</li></a>
-		<?php } ?>
-		<a href="/createprofile"><li class="added">
-		<p>Adicionar perfil</p>
-		</li></a>
-		<?php }?>
+       	echo '';
+       	}
+		 else{ ?>
+		<form>
+		<li class="avatar1">
+		<br>
+		<input type="text" id="name" placeholder="Nome"/>
+		</li>
+		<center>
+		<button class="gerenc" id="createprofile" style="top: 14vw; left: -1vw">Criar</button>
+		</center>
+<br>
+		<div id="message"></div>
+<br>
+
+		<?php  }?>
 		</center>
 
 	</div>
-<center>
-	<button class="gerenc">GERENCIAR PERFIS</button>
-</center>
