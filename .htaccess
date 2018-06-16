@@ -3,6 +3,7 @@
 RewriteRule ^register /index.php?register [L]
 RewriteRule ^login /index.php?login[L]
 RewriteRule ^dashboard /index.php?dashboard[L]
+RewriteRule ^browse /index.php?browse[L]
 RewriteRule ^logando /app/backend/loginFunction.php
 RewriteRule ^registro /app/backend/registerFunction.php
 </IfModule>

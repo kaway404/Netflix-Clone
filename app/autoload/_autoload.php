@@ -2,10 +2,20 @@
 session_start();
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	include './app/system/account_ok.php';
+	if(isset($_COOKIE['perfil'])){
 	if(isset($_GET['dashboard'])){
 	include './app/components/dashboard/dashboard.php';
 	}else{
 	include './app/components/dashboard/dashboard.php';
+	}
+	}
+	else{
+	if(isset($_GET['browse'])){
+	include './app/components/dashboard/browse.php';
+	}
+	else{
+	include './app/components/dashboard/browse.php';
+	}
 	}
 }
 else{
