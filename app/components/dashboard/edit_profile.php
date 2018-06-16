@@ -3,7 +3,7 @@
 	</div>
 
 	<div class="center quem_assistir">
-		<h1>Quem está assistindo?</h1>
+		<h1>Editar perfil</h1>
 
 		<center>
 		<?php
@@ -11,28 +11,18 @@
 		$result_perfil = "SELECT * FROM perfil WHERE iduser = '$iduser' LIMIT 4";
         $resultado_perfil = mysqli_query($conn, $result_perfil);
         $resultado = mysqli_fetch_assoc($resultado_perfil);
-        $totaldeperfil = mysqli_num_rows($resultado_perfil);
-        if($totaldeperfil == 4){
 		?>
 		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
+		<a href="/editandoprofile/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
+		<div class="edit">
+			<svg id="editprofile" viewBox="0 0 32 32" width="100%" height="100%"><path fill="#fff" d="M16 0c8.833 0 16 7.167 16 16 0 8.8-7.167 16-16 16s-16-7.2-16-16c0-8.833 7.167-16 16-16zM16 1.7c-7.9 0-14.3 6.4-14.3 14.3s6.4 14.3 14.3 14.3 14.3-6.4 14.3-14.3-6.4-14.3-14.3-14.3zM22.333 12.9l0.3-0.267 0.867-0.867c0.467-0.5 0.4-0.767 0-1.167l-1.767-1.767c-0.467-0.467-0.767-0.4-1.167 0l-0.867 0.867-0.267 0.3zM18.3 11.1l-8.6 8.6-0.833 3.767 3.767-0.833 0.967-1 7.633-7.6z"></path></svg>
+		</div>
 		<p><?php echo $resultado_perfils['name'];?></p>
 		</li></a>
 		<?php } ?>
-		<?php }
-		else{?>
-		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo $resultado_perfils['name'];?></p>
-		</li></a>
-		<?php } ?>
-		<a href="/createprofile"><li class="added">
-		<p>Adicionar perfil</p>
-		</li></a>
-		<?php }?>
 		</center>
 
 	</div>
 <center>
-	<a href="/editprofiles"><button class="gerenc">GERENCIAR PERFIS</button></a>
+	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc">OK</button></a>
 </center>

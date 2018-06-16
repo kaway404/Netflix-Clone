@@ -1,24 +1,19 @@
 <?php include '../database/config.php';
 
-$name = $_POST['name'];
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
-
-if($_POST['name']==""){
-	echo ('Preencha o campo Nome');	
-}
 
 $iduser = $_COOKIE['iduser'];
 
-if($_POST['name']!=""){
+$idprofile = $_GET['id'];
 
-	$result_usuario = "SELECT * FROM perfil WHERE iduser = '$iduser' LIMIT 1";
+
+	$result_usuario = "SELECT * FROM perfil WHERE iduser = '$iduser' and id = '$idprofile' LIMIT 1";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     $resultado = mysqli_fetch_assoc($resultado_usuario);
     $totaldeperfil = mysqli_num_rows($resultado_usuario);
      if($totaldeperfil < 4){
 
-    $sql = "INSERT INTO perfil (iduser, name)
-			VALUES ('".$iduser."', '".$name."')";
+    $sql = "DELETE FROM perfil WHERE id= '$idprofile' ";
 
 			if (mysqli_query($conn, $sql)) {
 			    echo "Criado com sucesso";
@@ -27,6 +22,5 @@ if($_POST['name']!=""){
 			    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}
 		}
-	}
 }
 	?>

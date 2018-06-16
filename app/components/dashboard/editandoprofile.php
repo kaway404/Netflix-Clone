@@ -3,36 +3,25 @@
 	</div>
 
 	<div class="center quem_assistir">
-		<h1>Quem está assistindo?</h1>
+		<h1>Editar perfil</h1>
 
 		<center>
 		<?php
+		$idperfil = $_GET['id'];
 		$iduser = $_COOKIE['iduser'];
-		$result_perfil = "SELECT * FROM perfil WHERE iduser = '$iduser' LIMIT 4";
+		$result_perfil = "SELECT * FROM perfil WHERE id = '$idperfil' and iduser = '$iduser' LIMIT 1";
         $resultado_perfil = mysqli_query($conn, $result_perfil);
         $resultado = mysqli_fetch_assoc($resultado_perfil);
-        $totaldeperfil = mysqli_num_rows($resultado_perfil);
-        if($totaldeperfil == 4){
 		?>
 		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
+		<li class="avatar1">
 		<p><?php echo $resultado_perfils['name'];?></p>
-		</li></a>
+		</li>
 		<?php } ?>
-		<?php }
-		else{?>
-		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
-		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo $resultado_perfils['name'];?></p>
-		</li></a>
-		<?php } ?>
-		<a href="/createprofile"><li class="added">
-		<p>Adicionar perfil</p>
-		</li></a>
-		<?php }?>
 		</center>
 
 	</div>
 <center>
-	<a href="/editprofiles"><button class="gerenc">GERENCIAR PERFIS</button></a>
-</center>
+	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc">Voltar</button></a>
+	<a href="/deleteprofile/<?php echo $idperfil;?>"><button style="color: #333; background: #fff; left: -10px" class="gerenc">Deletar perfil</button></a>
+</center>s

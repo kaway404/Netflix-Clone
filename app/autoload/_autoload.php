@@ -12,6 +12,12 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	elseif(isset($_GET['createprofile'])){
 		include './app/components/dashboard/create_profile.php';
 	}
+	elseif(isset($_GET['editprofile'])){
+		include './app/components/dashboard/edit_profile.php';
+	}
+	elseif(isset($_GET['editandoprofile'])){
+		include './app/components/dashboard/editandoprofile.php';
+	}
 	else{
 	include './app/components/dashboard/browse.php';
 	}

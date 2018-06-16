@@ -5,8 +5,11 @@ RewriteRule ^login /index.php?login[L]
 RewriteRule ^dashboard /index.php?dashboard[L]
 RewriteRule ^browse /index.php?browse[L]
 RewriteRule ^createprofile /index.php?createprofile[L]
+RewriteRule ^editprofile /index.php?editprofile[L]
 RewriteRule ^logando /app/backend/loginFunction.php
 RewriteRule ^registro /app/backend/registerFunction.php
 RewriteRule ^newprofile /app/backend/newProfile.php
 RewriteRule ^swift/(.*)$ /app/backend/swift.php?id=$1 [L]
+RewriteRule ^editandoprofile/(.*)$ index.php?id=$1&editandoprofile=1 [L]
+RewriteRule ^deleteprofile/(.*)$ /app/backend/deleteprofile.php?id=$1 [L]
 </IfModule>
