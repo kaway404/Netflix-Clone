@@ -19,7 +19,7 @@
             setcookie("iduser", $resultado['id'], time()+7200);
             setcookie("cry", $resultado['cry'], time()+7200);
             echo 'Estamos redirecionando você';
-            echo '<script>location.href="/dashboard";</script>';
+            echo '<script>location.href="/browse";</script>';
         }
         else{
         	echo 'Email ou senha incorretos';
