@@ -273,7 +273,7 @@ button{
     display: none;
 }
 
-#btn-red-login{
+.btn-red-ast{
     color: #fff;
     background-color: #e50914;
     line-height: normal;
