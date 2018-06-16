@@ -20,7 +20,7 @@
 		<div id="message">
 		</div>
 
-				<p class="novo_aqui">Já tem uma conta? <a href="/register">Entre agora.</a>  </p>
+				<p class="novo_aqui">Já tem uma conta? <a href="/login">Entre agora.</a>  </p>
 
 				</div>
 			</div>
