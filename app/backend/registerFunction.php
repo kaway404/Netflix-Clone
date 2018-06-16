@@ -15,11 +15,12 @@
 	$crying = "netflix_" . sha1($_POST['email']);
 	
 	if($_POST['email']==""){
-		echo ('Preencha os campos');	
+		echo ('Preencha o campo email <br>');	
 	}
-	elseif($_POST['senha']==""){
-		echo ('Preencha os campos');	
+	if($_POST['senha']==""){
+		echo ('Preencha o campo senha <br>');	
 	}
+	else{
 
 	if($_POST['email']!=""){
 	
@@ -28,7 +29,7 @@
     $resultado = mysqli_fetch_assoc($resultado_usuario);
 
     if(isset($resultado)){
-    	echo 'Esse email já existe';
+    	echo 'Esse email já existe<br>';
     }
 		else
 		{	
@@ -43,7 +44,7 @@
         if(isset($resultado)){
             setcookie("iduser", $resultado['id'], time() + (86400 * 30), "/");
             setcookie("cry", $resultado['cry'], time() + (86400 * 30), "/");
-            echo 'Estamos redirecionando você';
+            echo 'Estamos redirecionando você <br>';
             echo '<script>location.href="/browse";</script>';
         }
 			} else {
@@ -52,6 +53,7 @@
 				
 		}
 	}
+}
 
 	
 ?>
