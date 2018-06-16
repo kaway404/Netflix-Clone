@@ -1,11 +1,15 @@
 <?php
-    $host = 'localhost';
-    $user = 'root';
-    $password = '';
-    $database = 'netflix';
-    $mysqli = new mysqli();
-    $mysqli->connect($host, $user, $password, $database);
-    if (mysqli_connect_errno()) {
-        exit('Connect failed: '. mysqli_connect_error());
-    }
+    $servidor = "localhost";
+    $usuario = "root";
+    $senha = "";
+    $dbname = "netflix";
+    
+    //Criar a conexao
+    $conn = mysqli_connect($servidor, $usuario, $senha, $dbname);
+    
+    if(!$conn){
+        die("Falha na conexao: " . mysqli_connect_error());
+    }else{
+        //echo "Conexao realizada com sucesso";
+    }      
 ?>

@@ -1,27 +1,25 @@
 <?php include '../database/config.php';
+	session_start();
 	$json = file_get_contents('php://input'); 	
 	$obj = json_decode($json,true);
 
 	$email = $_POST['email'];
 	
-	$password = $_POST['senha'];;
+	$password = sha1($_POST['senha']);
 	
 	if($_POST['email']==""){
-		echo json_encode('Preencha os campos');	
-	}
-	elseif($_POST['senha']==""){
-		echo json_encode('Preencha os campos');	
+		echo ('Preencha os campos');	
 	}
 
 	if($_POST['email']!=""){
-	
-	$result= $mysqli->query("SELECT * FROM users where email='$email' and password='$password'");
-	
-		if($result->num_rows==0){
-			echo json_encode('Email ou senha incorretos');				
-		}
-		else{		
-		echo ('1');				
-		}
+		$result_usuario = "SELECT * FROM users WHERE email = '$email' && password = '$password' LIMIT 1";
+        $resultado_usuario = mysqli_query($conn, $result_usuario);
+        $resultado = mysqli_fetch_assoc($resultado_usuario);
+        if(isset($resultado)){
+            setcookie("iduser", $resultado['id'], time()+7200);
+            setcookie("cry", $resultado['cry'], time()+7200);
+            echo 'Estamos redirecionando você';
+            echo '<script>location.href="/dashboard";</script>';
+        }
 	}	
 ?>
