@@ -368,3 +368,8 @@ button{
     position: relative;
     top: 8vw;
 }
+
+.gerenc:hover{
+    color: #fff;
+    border: 1px solid #fff;
+}
