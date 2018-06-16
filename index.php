@@ -10,15 +10,8 @@ include './app/database/config.php';
 	<link rel="stylesheet" type="text/css" href="/app/styles/style.css?v=1.0">
 </head>
 <body>
-
 <?php
-if(isset($_COOKIE['iduser'])){
-	include './app/components/dashboard/dashboard.php';
-}
-else{
-include './app/components/home/home_index.php';
-}
+include './app/autoload/_autoload.php';
 ?>
-
 </body>
 </html>	

@@ -1,10 +1,11 @@
 *{
 	margin: 0;
 	padding: 0;
+    list-style: none;
 }
 
 body{
-	background: #141414;
+	background: #000;
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -39,8 +40,8 @@ body{
 	background-image: url(/app/img/background_home.jpg);
 	width: 100%;
 	height: 610px;
-	position: absolute;
-    top: 0;
+	position: relative;
+    top: -50px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -130,4 +131,54 @@ body{
     position: relative;
     z-index: 50;
     top: 240px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.navigation_options{
+    width: 100%;
+    position: relative;
+    height: 160px;
+    background: #151515;
+    z-index: 1000;
+    top: -50px;
+}
+
+.navigation_options li p{
+    color: #fff;
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 0px;
+}
+
+
+.navigation_options li{
+    width: 300px;
+    position: relative;
+    margin: 0px auto;
+    top: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.navigation_options li svg{
+    height: 49px;
+    fill: #fff;
+    bottom: 10px;
+    position: relative;
+}
+
+.center{
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 70%;
+}
+
+.block{
+    color: #777 !important;
+    fill: #777 !important;
 }
