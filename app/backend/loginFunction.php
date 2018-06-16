@@ -21,5 +21,8 @@
             echo 'Estamos redirecionando você';
             echo '<script>location.href="/dashboard";</script>';
         }
+        else{
+        	echo 'Email ou senha incorretos';
+        }
 	}	
 ?>
