@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 22:42
+-- Generation Time: 16-Jun-2018 às 22:43
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -107,21 +107,6 @@ CREATE TABLE `season` (
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `series`
---
-
-CREATE TABLE `series` (
-  `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `descri` text NOT NULL,
-  `cast` text NOT NULL,
-  `ano_lanc` varchar(255) NOT NULL,
-  `ativo` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Estrutura da tabela `users`
 --
 
@@ -185,12 +170,6 @@ ALTER TABLE `season`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `series`
---
-ALTER TABLE `series`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -228,12 +207,6 @@ ALTER TABLE `perfil`
 -- AUTO_INCREMENT for table `season`
 --
 ALTER TABLE `season`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `series`
---
-ALTER TABLE `series`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
