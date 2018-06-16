@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 16:55
+-- Generation Time: 16-Jun-2018 às 17:30
 -- Versão do servidor: 10.1.33-MariaDB
--- PHP Version: 7.2.6
+-- PHP Version: 7.1.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,6 +21,35 @@ SET time_zone = "+00:00";
 --
 -- Database: `netflix`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `filmes`
+--
+
+CREATE TABLE `filmes` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `synopse` text NOT NULL,
+  `logo` text NOT NULL,
+  `background` text NOT NULL,
+  `video` text NOT NULL,
+  `year` text NOT NULL,
+  `age` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `season`
+--
+
+CREATE TABLE `season` (
+  `id` int(11) NOT NULL,
+  `id_serie` int(11) NOT NULL,
+  `season` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -72,6 +101,18 @@ CREATE TABLE `videos` (
 --
 
 --
+-- Indexes for table `filmes`
+--
+ALTER TABLE `filmes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `season`
+--
+ALTER TABLE `season`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `series`
 --
 ALTER TABLE `series`
@@ -92,6 +133,18 @@ ALTER TABLE `videos`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `filmes`
+--
+ALTER TABLE `filmes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `season`
+--
+ALTER TABLE `season`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `series`
