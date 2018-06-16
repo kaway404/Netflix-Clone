@@ -5,7 +5,6 @@
 }
 
 body{
-	background: #000;
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
 }
@@ -291,4 +290,81 @@ button{
     width: 100%;
     height: 50px;
     top: 100px;
+}
+
+/*browse*/
+
+#netflix-logobr{
+    height: 45px;
+    width: 147px;
+    vertical-align: middle;
+    text-decoration: none;
+    vertical-align: middle;
+    fill: #e50914;
+    display: inline-block;
+    line-height: 90px;
+    cursor: pointer;
+    left: 40px;
+    top: 20px;
+    position: relative;
+    transform: scale(0.7);
+}
+
+.quem_assistir{
+    width: 50%;
+    height: 400px;
+    position: relative;
+    top: 10vw;
+}
+
+.quem_assistir h1{
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.quem_assistir li{
+    height: 140px;
+    width: 140px;
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+    text-decoration: none;
+    border: .3em solid rgba(0,0,0,.4);
+    background-repeat: no-repeat;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: #333;
+    top: 30px;
+    cursor: pointer;
+    float: left;
+    margin-left: 30px;
+}
+
+.quem_assistir li:hover{
+    border: .3em solid #fff;
+}
+
+.quem_assistir .avatar1{
+    background-image: url(/app/img/user/user1.png);
+}
+
+.gerenc{
+    border: 1px solid grey;
+    color: grey;
+    text-transform: uppercase;
+    padding: .8em 1.8em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-size: .9em;
+    background: transparent;
+    color: grey;
+    position: relative;
+    top: 8vw;
 }
