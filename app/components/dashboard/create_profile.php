@@ -22,8 +22,10 @@
 		<input type="text" id="name" placeholder="Nome"/>
 		</li>
 		<center>
-		<button class="gerenc" id="createprofile" style="top: 14vw; left: -1vw">Criar</button>
+		<button class="gerenc" id="createprofile" style="top: 14vw; left: 4.5vw">Criar</button>
 		</center>
+	</form>
+			<a href="/browse"><button style="color: #333; background: #fff; left: -6vw; top: 11vw" class="gerenc">Voltar</button></a>
 <br>
 		<div id="message"></div>
 <br>
