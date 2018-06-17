@@ -686,7 +686,7 @@ button{
     bottom: -135px;
     display: none;
     transition: 1s;
-    z-index: 10000;
+    z-index: 5000;
 }
 
 .themes a{
