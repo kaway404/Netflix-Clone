@@ -1,4 +1,5 @@
 	<?php
+	include './app/database/config.php';
 	if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 	if(empty($_COOKIE['perfil'])){
 	?>
