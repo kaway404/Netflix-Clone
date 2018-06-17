@@ -516,6 +516,7 @@ button{
     position: relative;
     top: 200px;
     left: 50px;
+    z-index: 1000;
 }
 
 .destaque button{
@@ -617,7 +618,7 @@ button{
     background-repeat: repeat-x;
     background-color: transparent;
     width: 100%;
-    height: 25.8vw;
+    height: 450px;
     position: absolute;
     left: 0;
     right: 0;
