@@ -627,4 +627,105 @@ button{
     z-index: 100;
 }
 
+#what_is{
+    font-size: 2vw;
+    font-weight: 700;
+    white-space: nowrap;
+    margin-right: 15px;
+    color: #fff;
+}
 
+#oneforall{
+    position: relative;
+    width: 91%;
+    margin: 0px auto;
+    top: 80px;
+}
+
+#oneforall .label{
+    height: 2rem;
+    padding-left: 10px;
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: .9rem;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    display: inline-block;
+    color: #fff;
+    background-color: #000;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    position: relative;
+    padding-right: 50px;
+    position: relative;
+    left: 125px;
+    bottom: 35px;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+
+#oneforall .label:hover{
+    background-color: #252525;
+}
+
+.themes{
+    width: 360px;
+    height: auto;
+    background-color: rgba(0,0,0,.9);
+    line-height: 21px;
+    border: solid 1px rgba(255,255,255,.15);
+    position: relative;
+    left: 130px;
+    bottom: 35px;
+    display: none;
+}
+
+.themes a{
+    color: #fff;
+    padding: 1px 20px 1px 10px;
+}
+
+.themes li{
+    cursor: pointer;
+    line-height: 24px;
+    display: block;
+    display: inline-block;
+    width: 170px;
+}
+
+.themes li:hover{
+    background: rgba(255,255,255,.15);
+}
+
+.themes ul{
+    padding: 5px 0;
+    margin: 0;
+    left: 0px;
+    position: relative;
+}
+
+.label:hover + .themes{
+    display: block;
+}
+
+.themes:hover{
+    display: block;
+}
+
+.arrow{
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 5px 5px 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 44%;
+    width: 0;
+}

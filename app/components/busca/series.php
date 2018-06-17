@@ -12,3 +12,24 @@
 	<a id="linksa" href="/myplaylist" class="desative">Playlist</a>
 
 	</div>
+
+	<div id="oneforall">
+	<h1 id="what_is">Séries</h1> 
+	<div class="label" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">Gêneros<span class="arrow"></span></div>
+
+	<div class="themes">
+		<uL>
+		<?php
+		$result_genero = "SELECT * FROM genre WHERE id";
+        $resultado_genero = mysqli_query($conn, $result_genero);
+        $resultado = mysqli_fetch_assoc($resultado_genero);
+        foreach ($resultado_genero as $resultado_genero => $resultado_generos) {
+        ?>
+        <li><a><?php echo $resultado_generos['nome'];?></a></li>
+    	<?php } ?>
+    </uL>
+
+
+	</div>
+
+	</div>
