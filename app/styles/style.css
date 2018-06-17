@@ -343,7 +343,7 @@ button{
     box-sizing: border-box;
     position: relative;
     text-decoration: none;
-    border: .3em solid grey;
+    border: .3em solid #3333335c;
     background-repeat: no-repeat;
     -moz-background-size: cover;
     background-size: cover;
