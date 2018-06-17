@@ -580,16 +580,6 @@ button{
     cursor: pointer !important;
 }
 
-#slider{
-    width: 100%;
-    position: relative;
-    height: 500px;
-    background: transparent;
-    margin-top: 40px;
-    bottom: 200px;
-    z-index: 1000;
-}
-
 #slider h1{
     color: #eee;
     font-size: 1.2em;
