@@ -21,6 +21,9 @@ function dashboard (){
 	elseif(isset($_GET['generoblob'])){
 		include './app/components/gene/filmes.php';
 	}
+	elseif(isset($_GET['title'])){
+		include './app/components/title/conteudo.php';
+	}
 	else{
 		include './app/components/dashboard/dashboard.php';
 	}

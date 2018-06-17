@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Jun-2018 às 21:30
+-- Generation Time: 17-Jun-2018 às 22:16
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `filmes` (
   `id` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `name` text NOT NULL,
   `synopse` text NOT NULL,
   `logo` text NOT NULL,
@@ -50,8 +51,8 @@ CREATE TABLE `filmes` (
 -- Extraindo dados da tabela `filmes`
 --
 
-INSERT INTO `filmes` (`id`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
-(1, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', 3, 0, 0, 0, 0, 1);
+INSERT INTO `filmes` (`id`, `url`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
+(1, '928c91c35ee7f1feb15ee54f70ccde83748a84af', 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', 3, 0, 0, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -133,6 +134,7 @@ CREATE TABLE `season` (
 
 CREATE TABLE `series` (
   `id` int(11) NOT NULL,
+  `url` varchar(255) NOT NULL,
   `name` text NOT NULL,
   `synopse` text NOT NULL,
   `logo` text NOT NULL,
@@ -153,8 +155,8 @@ CREATE TABLE `series` (
 -- Extraindo dados da tabela `series`
 --
 
-INSERT INTO `series` (`id`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
-(1, 'Rick and Morty', 'Depois que Rick vende uma arma a um assassino alienígena para bancar sua tarde de jogos eletrônicos, Morty é obrigado a impedir que o tal ET cometa um crime.', 'https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/c8/Rick_and_Morty_logo.png', 'https://occ-0-428-185.1.nflxso.net/art/17dbb/5a12ebd64f1438514c23b6255eb8b6640cd17dbb.webp', 'https://occ-0-428-185.1.nflxso.net/art/a957e/96e1105e81924f1fed3b33be93d82fd5d53a957e.webp', '', '2018', '2018', 1, 3, 4, 0, 0, 0);
+INSERT INTO `series` (`id`, `url`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
+(1, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', 'Rick and Morty', 'Depois que Rick vende uma arma a um assassino alienígena para bancar sua tarde de jogos eletrônicos, Morty é obrigado a impedir que o tal ET cometa um crime.', 'https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/c8/Rick_and_Morty_logo.png', 'https://occ-0-428-185.1.nflxso.net/art/17dbb/5a12ebd64f1438514c23b6255eb8b6640cd17dbb.webp', 'https://occ-0-428-185.1.nflxso.net/art/a957e/96e1105e81924f1fed3b33be93d82fd5d53a957e.webp', '', '2018', '2018', 1, 3, 4, 0, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -276,7 +278,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT for table `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `users`

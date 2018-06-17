@@ -18,4 +18,5 @@ RewriteRule ^news /index.php?news[L]
 RewriteRule ^myplaylist /index.php?playlist[L]
 RewriteRule ^genero/(.*)$ index.php?id=$1&genero [L]
 RewriteRule ^generoblob/(.*)$ index.php?id=$1&generoblob [L]
+RewriteRule ^title/(.*)$ index.php?id=$1&title=1 [L]
 </IfModule>

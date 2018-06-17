@@ -812,3 +812,69 @@ button{
     color: #fff;
     font-size: 23px;
 }
+
+#title{
+    width: 100%;
+    height: 500px;
+    background: #000;
+    top: 60px;
+    position: relative;
+}
+
+.info_left{
+    width: 400px;
+    float: left;
+    left: 50px;
+    position: relative;
+    z-index: 1000;
+    height: 100%;
+}
+
+.info_left h1{
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    color: #fff
+}
+
+.info_left span{
+    color: #fff;
+    font-weight: 700;
+}
+
+.info_left #synopse{
+    color: #999;
+}
+
+.info_left::before{
+        content: '';
+    position: absolute;
+    z-index: 10;
+    background-image: -webkit-gradient(linear,left top,right top,from(#000),to(transparent));
+    background-image: -webkit-linear-gradient(left,#000,transparent);
+    background-image: -moz-linear-gradient(left,#000,transparent);
+    background-image: -o-linear-gradient(left,#000,transparent);
+    background-image: linear-gradient(to right,#000,transparent);
+    top: 0;
+    bottom: 0;
+    left: 120%;
+    width: 275px;
+}
+
+.info_right{
+    width: 60%;
+    position: relative;
+    float: right;
+    right: 0;
+    background: #fff;
+    height: 100%;
+}
+
+.info_right img{
+    width: 100%;
+    height: 100%;
+}

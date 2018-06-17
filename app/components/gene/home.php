@@ -33,7 +33,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
         $resultado = mysqli_fetch_assoc($resultado_genero);
         foreach ($resultado_genero as $resultado_genero => $resultado_generos) {
         ?>
-        <li><a href="/generoblob/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
+        <li><a href="/genero/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
     	<?php } ?>
     </uL>
 	</div>
@@ -47,6 +47,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
         foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
      ?>
 
+<a href="/title/<?php echo $resultado_filmes['url'];?>">
 <div id="filmes">
 <div id="avata_filmes">
 	<img src="<?php echo $resultado_filmes['cover'];?>"/>
@@ -55,6 +56,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
 	<div id="play"><button><i class="fas fa-play"></i></button></div>
 </div>
 </div>
+</a>
 
 
  <?php } ?>

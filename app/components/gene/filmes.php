@@ -47,6 +47,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
         foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
      ?>
 
+<a href="/title/<?php echo $resultado_filmes['url'];?>">
 <div id="filmes">
 <div id="avata_filmes">
 	<img src="<?php echo $resultado_filmes['cover'];?>"/>
@@ -55,7 +56,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
 	<div id="play"><button><i class="fas fa-play"></i></button></div>
 </div>
 </div>
-
+</a>
 
  <?php } ?>
 
