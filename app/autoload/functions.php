@@ -1,9 +1,13 @@
 <?php
-if(isset($_GET['login'])){
+function script () {
+	if(isset($_GET['login'])){
+		echo '<script type="text/javascript" src="/app/scripts/login.js"></script>';
+	}
+	elseif(isset($_GET['register'])){
+		echo '<script type="text/javascript" src="/app/scripts/registro.js"></script>';
+	}
+	elseif(isset($_GET['createprofile'])){
+		echo '<script type="text/javascript" src="/app/scripts/createprofile.js"></script>';
+	}
+}
 ?>
-<script type="text/javascript" src="/app/scripts/login.js"></script>
-<?php } elseif(isset($_GET['register'])){?>
-<script type="text/javascript" src="/app/scripts/registro.js"></script>
-<?php } elseif(isset($_GET['createprofile'])){?>
-<script type="text/javascript" src="/app/scripts/createprofile.js"></script>
-<?php } ?>

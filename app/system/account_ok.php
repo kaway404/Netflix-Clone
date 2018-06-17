@@ -1,4 +1,5 @@
 <?php
+function verificar (){
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 
 	$iduser = $_COOKIE['iduser'];
@@ -17,5 +18,6 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
             setcookie("cry", "", time()+7200);
     	echo '<script>location.href="/login";</script>';
     }
+}
 }
 ?>

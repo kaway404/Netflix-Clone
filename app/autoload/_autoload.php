@@ -1,38 +1,40 @@
 <?php
+function home (){
 session_start();
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
-	include './app/system/account_ok.php';
+	verificar();
 	if(isset($_COOKIE['perfil'])){
-	include './app/system/perfil_ok.php';
-	include './app/components/dashboard/dashboard.php';
+	verificarperfil();
+	dashboard();
 	}
 	else{
 	if(isset($_GET['browse'])){
-	include './app/components/dashboard/browse.php';
+	browse();
 	}
 	elseif(isset($_GET['createprofile'])){
-		include './app/components/dashboard/create_profile.php';
+		createprofile();
 	}
 	elseif(isset($_GET['editprofile'])){
-		include './app/components/dashboard/edit_profile.php';
+		editprofile();
 	}
 	elseif(isset($_GET['editandoprofile'])){
-		include './app/components/dashboard/editandoprofile.php';
+		editandoprofile();
 	}
 	else{
-	include './app/components/dashboard/browse.php';
+	browse();
 	}
 	}
 }
 else{
 if(isset($_GET['login'])){
-	include './app/components/account/login.php';
+	login();
 }
 elseif(isset($_GET['register'])){
-	include './app/components/account/register.php';
+	register();
 }
 else{
-include './app/components/home/home_index.php';
+home_index();
+}
 }
 }
 ?>

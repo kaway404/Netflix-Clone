@@ -1,23 +1,29 @@
 <?php
-include './app/database/config.php';
+require './app/database/config.php';
+require './app/autoload/titles.php';
+require './app/autoload/functions.php';
+require './app/autoload/_autoload.php';
+require './app/system/account_ok.php';
+require './app/system/perfil_ok.php';
+require './app/system/includes.php';
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php
-	include './app/autoload/titles.php';
-	?>
 	<link rel="shortcut icon" href="/app/img/favicon.ico"/>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/app/styles/style.css?v=1.0">
+	<?php
+	titulo();
+	?>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<?php
-	include './app/autoload/functions.php';
+	script();
 	?>
 </head>
 <body>
 <?php
-include './app/autoload/_autoload.php';
+home();
 ?>
 </body>
 </html>	
