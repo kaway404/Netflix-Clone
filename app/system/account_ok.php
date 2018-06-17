@@ -15,9 +15,9 @@ if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 
     }
     else{
-    	// setcookie("iduser", "", time()+7200);
-     //        setcookie("cry", "", time()+7200);
-    	// echo '<script>location.href="/login";</script>';
+    	setcookie("iduser", "", time()+7200);
+     setcookie("cry", "", time()+7200);
+    	echo '<script>location.href="/login";</script>';
     }
 }
 }
