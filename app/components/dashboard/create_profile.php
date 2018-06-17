@@ -31,9 +31,9 @@
 		<br>
 	</form>
 	<a href="/browse"><button style="color: #333; background: #fff; left: -4.9vw; top: 2vw" class="gerenc">Voltar</button></a>
+	<div id="message"></div>
 </center>
 <br>
-		<div id="message"></div>
 <br>
 
 		<?php  }?>
