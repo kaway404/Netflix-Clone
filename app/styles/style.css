@@ -484,6 +484,7 @@ button{
     background: transparent;
     position: fixed;
     z-index: 1000000;
+    background: rgba(0,0,0,.50);
 }
 
 #netflix-logodash{
