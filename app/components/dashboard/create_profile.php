@@ -29,8 +29,8 @@
 		<center>
 		<button class="gerenc" id="createprofile" style="top: 60px; left: 20px">Criar</button>
 	</form>
-	<button style="color: #333; background: #fff; top: 60px; left: 20px" class="gerenc">Voltar</button>
-	<div id="message"></div>
+	<a href="/browse"><button style="color: #333; background: #fff; top: 60px; left: 20px" class="gerenc">Voltar</button>
+	<div id="message"></div></a>
 </center>
 <br>
 <br>
