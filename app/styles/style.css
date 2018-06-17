@@ -703,10 +703,6 @@ button{
     width: 170px;
 }
 
-.themes li:hover{
-    background: rgba(255,255,255,.15);
-}
-
 .themes ul{
     padding: 5px 0;
     margin: 0;
