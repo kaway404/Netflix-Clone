@@ -51,7 +51,13 @@
 			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
-			<img src="<?php echo $resultadoserie['background'];?>"/>
-		</div>
+			
+		<style>	
+		.info_right{
+			background-size: cover;
+			background-image: url(<?php echo $resultadoserie['background'];?>);
+		}
+		</style>
+
 	</div>
 	<?php } ?>

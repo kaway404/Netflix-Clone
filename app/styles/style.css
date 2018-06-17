@@ -819,7 +819,7 @@ button{
 }
 
 .info_left{
-    width: 400px;
+    width: 48%;
     float: left;
     left: 50px;
     position: relative;
@@ -864,7 +864,7 @@ button{
 }
 
 .info_right{
-    width: 60%;
+    width: 40%;
     position: relative;
     float: right;
     right: 0;
