@@ -14,6 +14,7 @@
 
 	<div class="destaque">
 		<img class="logo" src="<?php echo $filme['logo'];?>"/>
+		<button>Assistir</button>
 	</div>
 
 	<style>
