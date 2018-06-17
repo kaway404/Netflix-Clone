@@ -7,7 +7,7 @@
 
 	<a id="linksa" href="/dashboard" class="desative">Inicio</a>
 	<a id="linksa">Séries</a>
-	<a id="linksa" href="/movies">Filmes</a>
+	<a id="linksa" href="/movies" class="desative">Filmes</a>
 	<a id="linksa" href="/news" class="desative">Novidades</a>
 	<a id="linksa" href="/myplaylist" class="desative">Playlist</a>
 
@@ -41,7 +41,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
 	</div>
 
 	<?php
-		$result_filme = "SELECT * FROM filmes WHERE id and genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero' and tipo = 2 ";
+		$result_filme = "SELECT * FROM series WHERE tipo = 2 and genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero'  ";
         $resultado_filme = mysqli_query($conn, $result_filme);
         $resultado = mysqli_fetch_assoc($resultado_filme);
         foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
