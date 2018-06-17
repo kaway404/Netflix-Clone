@@ -15,6 +15,12 @@ function dashboard (){
 	elseif(isset($_GET['playlist'])){
 		include './app/components/busca/playlist.php';
 	}
+	elseif(isset($_GET['genero'])){
+		include './app/components/gene/home.php';
+	}
+	elseif(isset($_GET['generoblob'])){
+		include './app/components/gene/filmes.php';
+	}
 	else{
 		include './app/components/dashboard/dashboard.php';
 	}

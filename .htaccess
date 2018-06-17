@@ -16,4 +16,6 @@ RewriteRule ^series /index.php?series[L]
 RewriteRule ^movies /index.php?filmes[L]
 RewriteRule ^news /index.php?news[L]
 RewriteRule ^myplaylist /index.php?playlist[L]
+RewriteRule ^genero/(.*)$ index.php?id=$1&genero [L]
+RewriteRule ^generoblob/(.*)$ index.php?id=$1&generoblob [L]
 </IfModule>

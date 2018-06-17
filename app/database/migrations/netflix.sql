@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Jun-2018 às 19:23
+-- Generation Time: 17-Jun-2018 às 19:51
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -108,11 +108,13 @@ CREATE TABLE `perfil` (
 INSERT INTO `perfil` (`id`, `iduser`, `name`) VALUES
 (16, 11, 'Alexandre'),
 (19, 12, 'ww'),
-(20, 11, 'Anelise'),
 (21, 13, 'anelise 3131'),
 (22, 13, 'hrear'),
 (23, 14, 'Alexandre'),
-(24, 15, 'Daniel');
+(24, 15, 'Daniel'),
+(25, 11, 'JoÃ£o'),
+(26, 11, 'Mario'),
+(27, 16, 'm.m#8891');
 
 -- --------------------------------------------------------
 
@@ -151,7 +153,8 @@ INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `ad
 (12, 'netflix_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', '', 0, 0),
 (13, 'netflix_d87d1f989079ce85658bd55400c5545f93381bc1', 'anelisenaiara@hotmail.com', 'c3cdda1f9e5d093622cda7ca2de3cd116f6d5aa0', '', 0, 0),
 (14, 'netflix_b7e64bcb49fdb3f54dcdbf4570b6fd1b22e7b97f', 'what@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0),
-(15, 'netflix_2134d9478d2db73baa3eb632e72d5596ee6bb87d', 'danielf@gmail.com', 'f700a6934e78cd908cb5665cd84f89318bfa2d43', '', 0, 0);
+(15, 'netflix_2134d9478d2db73baa3eb632e72d5596ee6bb87d', 'danielf@gmail.com', 'f700a6934e78cd908cb5665cd84f89318bfa2d43', '', 0, 0),
+(16, 'netflix_8dbcd879373fff5908917a3b2a32f896d04f26c8', 'm.m#8891@gmail.com', '8dbcd879373fff5908917a3b2a32f896d04f26c8', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -227,7 +230,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT for table `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `season`
@@ -239,7 +242,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `videos`

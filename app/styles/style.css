@@ -690,6 +690,7 @@ button{
 .themes a{
     color: #fff;
     padding: 1px 20px 1px 10px;
+    text-decoration: none;
 }
 
 .themes li{

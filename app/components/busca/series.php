@@ -25,7 +25,7 @@
         $resultado = mysqli_fetch_assoc($resultado_genero);
         foreach ($resultado_genero as $resultado_genero => $resultado_generos) {
         ?>
-        <li><a><?php echo $resultado_generos['nome'];?></a></li>
+        <li><a href="/genero/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
     	<?php } ?>
     </uL>
 
