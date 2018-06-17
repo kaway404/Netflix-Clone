@@ -527,7 +527,7 @@ button{
     font-weight: 700;
     text-transform: uppercase;
     margin-right: .75em;
-    padding: .86em 1.55em;
+    padding: .40em 1.55em;
     color: #fff;
     border: 1px solid rgba(255,255,255,.4);
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3);
@@ -537,6 +537,18 @@ button{
     background-color: rgba(0, 0, 0, 0.4);
     border: none;
     z-index: 200;
+}
+
+.destaque button i{
+    font-size: 20px;
+    position: relative;
+    top: 2px;
+    left: -5px;
+}
+
+.destaque button span{
+    position: relative;
+    top: 0px;
 }
 
 .destaque button:hover{

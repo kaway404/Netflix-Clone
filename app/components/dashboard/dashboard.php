@@ -20,12 +20,10 @@
     if(isset($filme)){
     ?>
 
-	<div class="destaque">
-		<img class="logo" src="<?php echo $filme['logo'];?>"/>
-		<br>
-		<button>Assistir</button>
-		<button>+ PlayList</button>
-		<div id="nani"></div>
+	<div class="destaque"> <img class="logo" src="<?php echo
+	$filme['logo'];?>"/> <br> <button><i class="fas fa-play"></i><span>Assistir</span></button>
+	<button><i class="fas fa-plus"></i><span>Playlist</span></button>
+	<div id="nani"></div>
 	</div>
 
 	<style>
