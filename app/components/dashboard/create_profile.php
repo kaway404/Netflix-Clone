@@ -29,9 +29,9 @@
 		<center>
 		<button class="gerenc" id="createprofile" style="top: 5vw; left: 4.5vw">Criar</button>
 		<br>
-		<a href="/browse"><button style="color: #333; background: #fff; left: -4.9vw; top: 2vw" class="gerenc">Voltar</button></a>
-		</center>
 	</form>
+	<a href="/browse"><button style="color: #333; background: #fff; left: -4.9vw; top: 2vw" class="gerenc">Voltar</button></a>
+</center>
 <br>
 		<div id="message"></div>
 <br>
