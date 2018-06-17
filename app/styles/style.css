@@ -657,6 +657,7 @@ div.container {
 }
 div.left-scroll {
   left: 0;
+  cursor: pointer;
 }
 div.left-scroll i {
   -webkit-transform: translate(-60%, -50%);
@@ -664,6 +665,7 @@ div.left-scroll i {
 }
 div.right-scroll {
   right: 0;
+  cursor: pointer;
 }
 div.right-scroll i {
   -webkit-transform: translate(-40%, -50%);
