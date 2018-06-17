@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 16-Jun-2018 às 22:53
+-- Generation Time: 17-Jun-2018 às 19:23
 -- Versão do servidor: 10.1.33-MariaDB
 -- PHP Version: 7.2.6
 
@@ -34,18 +34,27 @@ CREATE TABLE `filmes` (
   `synopse` text NOT NULL,
   `logo` text NOT NULL,
   `background` text NOT NULL,
+  `cover` text NOT NULL,
   `video` text NOT NULL,
   `year` text NOT NULL,
   `age` text NOT NULL,
-  `genero` text NOT NULL
+  `genero` text NOT NULL,
+  `genre` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `filmes`
 --
 
-INSERT INTO `filmes` (`id`, `name`, `synopse`, `logo`, `background`, `video`, `year`, `age`, `genero`) VALUES
-(1, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', '', '2018', '2018', '3,11');
+INSERT INTO `filmes` (`id`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genero`, `genre`) VALUES
+(1, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(16, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(19, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(20, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(21, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(22, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(23, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', ''),
+(24, 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', '3,11', '');
 
 -- --------------------------------------------------------
 
@@ -55,7 +64,7 @@ INSERT INTO `filmes` (`id`, `name`, `synopse`, `logo`, `background`, `video`, `y
 
 CREATE TABLE `genre` (
   `id` int(11) NOT NULL,
-  `nome` text NOT NULL,
+  `nome` text CHARACTER SET utf8 NOT NULL,
   `ativo` int(11) NOT NULL,
   `status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -65,20 +74,20 @@ CREATE TABLE `genre` (
 --
 
 INSERT INTO `genre` (`id`, `nome`, `ativo`, `status`) VALUES
-(1, 'Ação', 1, 0),
+(1, 'Acao', 1, 0),
 (2, 'Aventura', 1, 0),
-(3, 'Comédia', 1, 0),
-(4, 'Animação', 1, 0),
-(5, 'Documentário', 1, 0),
+(3, 'Comedia', 1, 0),
+(4, 'Animacao', 1, 0),
+(5, 'Documentario', 1, 0),
 (6, 'Fantasia', 1, 0),
-(7, 'Faroeste – Western', 1, 0),
-(8, 'Ficção científica', 1, 0),
+(7, 'Faroeste Western', 1, 0),
+(8, 'Ficcao cientifica', 1, 0),
 (9, 'Guerra', 1, 0),
 (10, 'Musicais', 1, 0),
 (11, 'Romance', 1, 0),
 (12, 'Suspense', 1, 0),
 (13, 'Terror', 1, 0),
-(14, 'Tragédia/Drama', 1, 0);
+(14, 'Tragedia/Drama', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -97,7 +106,13 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`id`, `iduser`, `name`) VALUES
-(16, 11, 'Alexandre');
+(16, 11, 'Alexandre'),
+(19, 12, 'ww'),
+(20, 11, 'Anelise'),
+(21, 13, 'anelise 3131'),
+(22, 13, 'hrear'),
+(23, 14, 'Alexandre'),
+(24, 15, 'Daniel');
 
 -- --------------------------------------------------------
 
@@ -132,7 +147,11 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `admin`) VALUES
-(11, 'netflix_85d9235d10cf197950d843e56b47021ff02b0cee', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0);
+(11, 'netflix_85d9235d10cf197950d843e56b47021ff02b0cee', 'kaway@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0),
+(12, 'netflix_70909c345cd056c3d4dcd0f5a056fb33e88aaa23', 'anelise@hotmail.com', 'a873d476f684dd7a02e0ff310c060f547e3b1459', '', 0, 0),
+(13, 'netflix_d87d1f989079ce85658bd55400c5545f93381bc1', 'anelisenaiara@hotmail.com', 'c3cdda1f9e5d093622cda7ca2de3cd116f6d5aa0', '', 0, 0),
+(14, 'netflix_b7e64bcb49fdb3f54dcdbf4570b6fd1b22e7b97f', 'what@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0),
+(15, 'netflix_2134d9478d2db73baa3eb632e72d5596ee6bb87d', 'danielf@gmail.com', 'f700a6934e78cd908cb5665cd84f89318bfa2d43', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -196,7 +215,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `filmes`
 --
 ALTER TABLE `filmes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `genre`
@@ -208,7 +227,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT for table `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `season`
@@ -220,7 +239,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `videos`
