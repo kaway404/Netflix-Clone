@@ -1,4 +1,2 @@
-Tens que instalar os componentes do composer, você pode fazer isso com o comando composer install
-
 Edite as configurações do seu banco de dados em /app/database/config.php
 E importe o .sql que está no /app/database/migrations/netflix.sql
