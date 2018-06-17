@@ -516,8 +516,9 @@ button{
 }
 
 .destaque button{
-    position: absolute;
-    top: 340px;
+    position: relative;
+    top: 230px;
+    float: left;
     left: 50px;
     font-size: 1vw;
     font-weight: 700;
@@ -547,4 +548,30 @@ button{
     top: 2vw;
     width: 40vw;
     margin: 0px auto;
+}
+
+#header-ali #linksa{
+     position: relative;
+    color: #e5e5e5;
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
+    -moz-transition: color .4s;
+    transition: color .4s;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 50px;
+    top: 10px;
+    color: #fff;
+    font-weight: 700;
+    cursor: default;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+#header-ali .desative{
+    color: #ddd !important;
+    cursor: pointer !important;
 }
