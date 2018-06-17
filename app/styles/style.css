@@ -348,7 +348,7 @@ button{
 }
 
 .quem_assistir li:hover{
-    border: .3em solid grey;
+    border: .3em solid #fff;
 }
 
 .quem_assistir li p{
