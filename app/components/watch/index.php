@@ -21,7 +21,7 @@
     preload="auto"
     poster="//vjs.zencdn.net/v/oceans.png"
     data-setup='{}'>
-  <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4"></source>
+  <source src="https://r1---sn-bg0e7n7y.googlevideo.com/videoplayback?requiressl=yes&id=3dbfcd746b2b8f21&itag=18&source=blogger&app=blogger&ip=0.0.0.0&ipbits=0&expire=1531423984&sparams=expire,id,ip,ipbits,itag,mip,mm,mn,ms,mv,pl,requiressl,sc,source&signature=58D1E0913B68EACAB1DA8C51204E89F39D13B82C.65F1B781C302045879232F2A151723296EDBAB4D&key=cms1&cms_redirect=yes&mip=2804:d57:1a02:ae00:e916:9093:18d3:a44&mm=30&mn=sn-bg0e7n7y&ms=nxu&mt=1529276417&mv=m&pl=40&sc=yes" type="video/mp4"></source>
 </video>
 </div>
 
