@@ -7,7 +7,7 @@
 
 	<a id="linksa" href="/dashboard" class="desative">Inicio</a>
 	<a id="linksa">Séries</a>
-	<a id="linksa" href="/movies" class="desative">Filmes</a>
+	<a id="linksa" href="/movies">Filmes</a>
 	<a id="linksa" href="/news" class="desative">Novidades</a>
 	<a id="linksa" href="/myplaylist" class="desative">Playlist</a>
 
@@ -33,12 +33,30 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
         $resultado = mysqli_fetch_assoc($resultado_genero);
         foreach ($resultado_genero as $resultado_genero => $resultado_generos) {
         ?>
-        <li><a href="/genero/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
+        <li><a href="/generoblob/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
     	<?php } ?>
     </uL>
-
-
 	</div>
 
 	</div>
+
+	<?php
+		$result_filme = "SELECT * FROM filmes WHERE id and genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero' and tipo = 2 ";
+        $resultado_filme = mysqli_query($conn, $result_filme);
+        $resultado = mysqli_fetch_assoc($resultado_filme);
+        foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
+     ?>
+
+<div id="filmes">
+<div id="avata_filmes">
+	<img src="<?php echo $resultado_filmes['cover'];?>"/>
+	<div id="back_filme"></div>
+	<div id="descrt_filme"><p><?php echo $resultado_filmes['name'];?></p></div>
+	<div id="play"><button><i class="fas fa-play"></i></button></div>
+</div>
+</div>
+
+
+ <?php } ?>
+
 <?php } ?>

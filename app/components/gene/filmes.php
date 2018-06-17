@@ -36,9 +36,27 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
         <li><a href="/generoblob/<?php echo $resultado_generos['id'];?>"><?php echo $resultado_generos['nome'];?></a></li>
     	<?php } ?>
     </uL>
-
-
 	</div>
 
 	</div>
+
+	<?php
+		$result_filme = "SELECT * FROM filmes WHERE id and genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero' and tipo = 1 ";
+        $resultado_filme = mysqli_query($conn, $result_filme);
+        $resultado = mysqli_fetch_assoc($resultado_filme);
+        foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
+     ?>
+
+<div id="filmes">
+<div id="avata_filmes">
+	<img src="<?php echo $resultado_filmes['cover'];?>"/>
+	<div id="back_filme"></div>
+	<div id="descrt_filme"><p><?php echo $resultado_filmes['name'];?></p></div>
+	<div id="play"><button><i class="fas fa-play"></i></button></div>
+</div>
+</div>
+
+
+ <?php } ?>
+
 <?php } ?>

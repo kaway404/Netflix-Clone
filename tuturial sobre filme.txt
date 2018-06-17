@@ -1,0 +1,20 @@
+Na tabela filmes o tipo é como se fosse filme/série
+
+No caso o número 1 é filme e o número 2 é série/anime/desenho
+
+Na tabela generos tem os tipo de genero
+
+1 = ação
+2 = aventura
+3 = comedia
+4 = animacao
+5 = documentario
+6 = fantasia
+7 = faroeste
+8 = ficcao cientifica
+9 = guerra
+10 = musicais
+11 = romance
+12 = suspense
+13 = terror
+14 = tragedia/drama
