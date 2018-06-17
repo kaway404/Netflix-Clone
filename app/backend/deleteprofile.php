@@ -16,7 +16,6 @@ $idprofile = $_GET['id'];
     $sql = "DELETE FROM perfil WHERE id= '$idprofile' ";
 
 			if (mysqli_query($conn, $sql)) {
-			    echo "Criado com sucesso";
 			    echo '<script>location.href="/browse";</script>';
 			} else {
 			    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
