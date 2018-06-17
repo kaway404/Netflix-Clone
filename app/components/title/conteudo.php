@@ -26,6 +26,7 @@
 			<br>
 			<br>
 			<span id="synopse"><?php echo $resultado['synopse'];?></span>
+			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
 			<img src="<?php echo $resultado['background'];?>"/>
@@ -47,6 +48,7 @@
 			<br>
 			<br>
 			<span id="synopse"><?php echo $resultadoserie['synopse'];?></span>
+			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
 			<img src="<?php echo $resultadoserie['background'];?>"/>
