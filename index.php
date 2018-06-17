@@ -1,5 +1,5 @@
 <?php
-require './app/database/config.php';
+include './app/database/config.php';
 require './app/autoload/titles.php';
 require './app/autoload/functions.php';
 require './app/autoload/_autoload.php';

@@ -5,7 +5,7 @@ function home_index (){
 function dashboard (){
 	include './app/components/dashboard/dashboard.php';
 }
-function broswe (){
+function browse (){
 	include './app/components/dashboard/browse.php';;
 }
 function createprofile (){
@@ -22,5 +22,8 @@ function login (){
 }
 function register (){
 	include './app/components/account/register.php';
+}
+function database (){
+	include './app/database/config.php';
 }
 ?>

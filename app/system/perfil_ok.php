@@ -1,5 +1,6 @@
 <?php
 function verificarperfil (){
+include './app/database/config.php';
 if(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 
 	$iduser = $_COOKIE['iduser'];
