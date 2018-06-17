@@ -37,7 +37,7 @@
 			VALUES ('".$crying."', '".$email."', '".$passwordcry."')";
 
 			if (mysqli_query($conn, $sql)) {
-			    echo "Cadastrado com sucesso";
+			    echo "Cadastrado com sucesso<br>";
 		$result_usuario = "SELECT * FROM users WHERE email = '$email' && password = '$passwordcry' LIMIT 1";
         $resultado_usuario = mysqli_query($conn, $result_usuario);
         $resultado = mysqli_fetch_assoc($resultado_usuario);

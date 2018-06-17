@@ -446,15 +446,15 @@ button{
 }
 
 .quem_assistir #message{
-    width: 250px;
+    width: 220px;
     height: auto;
     background: red;
     color: #fff;
     position: relative;
-    bottom: -50px;
+    bottom: -70px;
     padding: 10px;
     display: none;
-    left: -8px;
+    left: 20px;
 }
 
 /*Edit profile*/
