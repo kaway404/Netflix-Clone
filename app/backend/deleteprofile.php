@@ -13,7 +13,7 @@ $idprofile = $_GET['id'];
     $totaldeperfil = mysqli_num_rows($resultado_usuario);
      if($totaldeperfil < 4){
 
-    $sql = "DELETE FROM perfil WHERE id= '$idprofile' ";
+    $sql = "DELETE FROM perfil WHERE iduser = '$iduser'and id = '$idprofile' ";
 
 			if (mysqli_query($conn, $sql)) {
 			    echo '<script>location.href="/browse";</script>';
