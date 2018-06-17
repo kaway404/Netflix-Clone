@@ -899,3 +899,24 @@ button{
     border: none;
     z-index: 200;
 }
+
+#watch{
+    position: relative;
+    top: 60px;
+}
+
+#watch .video-js{
+    width: 100%;
+    position: fixed;
+    height: 60%;
+}
+
+.video-js .vjs-big-play-button{
+    position: relative;
+    left: 45% !important;
+    top: 40% !important;
+}
+
+.video-js .vjs-control-bar{
+    background: rgba(0,0,0,.50) !important;
+}

@@ -2,6 +2,7 @@
  RewriteEngine On
 RewriteRule ^register /index.php?register [L]
 RewriteRule ^login /index.php?login[L]
+RewriteRule ^forgot /index.php?forgot[L]
 RewriteRule ^dashboard /index.php?dashboard[L]
 RewriteRule ^browse /index.php?browse[L]
 RewriteRule ^createprofile /index.php?createprofile[L]
@@ -19,4 +20,5 @@ RewriteRule ^myplaylist /index.php?playlist[L]
 RewriteRule ^genero/(.*)$ index.php?id=$1&genero [L]
 RewriteRule ^generoblob/(.*)$ index.php?id=$1&generoblob [L]
 RewriteRule ^title/(.*)$ index.php?id=$1&title=1 [L]
+RewriteRule ^watch/(.*)$ index.php?id=$1&watch [L]
 </IfModule>

@@ -27,6 +27,9 @@ elseif(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 		echo '<title>Netflix</title>';
 		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
 	}
+	elseif(isset($_GET['watch'])){
+		echo 'Netflix';
+	}
 	else{
 		echo '<title>Netflix</title>';
 		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';

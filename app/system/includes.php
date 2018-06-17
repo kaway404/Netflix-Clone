@@ -24,6 +24,9 @@ function dashboard (){
 	elseif(isset($_GET['title'])){
 		include './app/components/title/conteudo.php';
 	}
+	elseif(isset($_GET['watch'])){
+		include './app/components/watch/index.php';
+	}
 	else{
 		include './app/components/dashboard/dashboard.php';
 	}
@@ -48,5 +51,8 @@ function register (){
 }
 function database (){
 	include './app/database/config.php';
+}
+function forgot (){
+	include './app/components/account/forgot.php';
 }
 ?>

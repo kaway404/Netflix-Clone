@@ -9,5 +9,9 @@ function script () {
 	elseif(isset($_GET['createprofile'])){
 		echo '<script type="text/javascript" src="/app/scripts/createprofile.js"></script>';
 	}
+	elseif(isset($_GET['watch'])){
+		echo '<link href="//vjs.zencdn.net/7.0/video-js.min.css" rel="stylesheet">
+<script src="//vjs.zencdn.net/7.0/video.min.js"></script>';
+	}
 }
 ?>

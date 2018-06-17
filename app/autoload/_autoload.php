@@ -32,6 +32,9 @@ if(isset($_GET['login'])){
 elseif(isset($_GET['register'])){
 	register();
 }
+elseif(isset($_GET['forgot'])){
+	forgot();
+}
 else{
 home_index();
 }
