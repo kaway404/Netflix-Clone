@@ -3,10 +3,24 @@ function home_index (){
 	include './app/components/home/home_index.php';
 }
 function dashboard (){
-	include './app/components/dashboard/dashboard.php';
+	if(isset($_GET['series'])){
+		include './app/components/busca/series.php';
+	}
+	elseif(isset($_GET['filmes'])){
+		include './app/components/busca/movies.php';
+	}
+	elseif(isset($_GET['news'])){
+		include './app/components/busca/news.php';
+	}
+	elseif(isset($_GET['playlist'])){
+		include './app/components/busca/playlist.php';
+	}
+	else{
+		include './app/components/dashboard/dashboard.php';
+	}
 }
 function browse (){
-	include './app/components/dashboard/browse.php';;
+	include './app/components/dashboard/browse.php';
 }
 function createprofile (){
 	include './app/components/dashboard/create_profile.php';

@@ -12,4 +12,8 @@ RewriteRule ^newprofile /app/backend/newProfile.php
 RewriteRule ^swift/(.*)$ /app/backend/swift.php?id=$1 [L]
 RewriteRule ^editandoprofile/(.*)$ index.php?id=$1&editandoprofile=1 [L]
 RewriteRule ^deleteprofile/(.*)$ /app/backend/deleteprofile.php?id=$1 [L]
+RewriteRule ^series /index.php?series[L]
+RewriteRule ^movies /index.php?filmes[L]
+RewriteRule ^news /index.php?news[L]
+RewriteRule ^myplaylist /index.php?playlist[L]
 </IfModule>
