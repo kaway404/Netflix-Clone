@@ -581,6 +581,10 @@ button{
     cursor: pointer !important;
 }
 
+#header-ali .desative:hover{
+    color: #fff !important;
+}
+
 #slider h1{
     color: #eee;
     font-size: 1.2em;
