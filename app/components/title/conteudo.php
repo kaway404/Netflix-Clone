@@ -26,11 +26,21 @@
 			<br>
 			<br>
 			<span id="synopse"><?php echo $resultado['synopse'];?></span>
+			<br>
+			<br>
+			<br>
+			<br>
 			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
 			<img src="<?php echo $resultado['background'];?>"/>
 		</div>
+			<div class="bottom_lol">
+		<center>
+		<a class="ativo">Sobre</a>
+		<a>Filmes Semelhantes</a>
+		</center>
+	</div>
 	</div>
 	<?php } ?>
 
@@ -48,6 +58,10 @@
 			<br>
 			<br>
 			<span id="synopse"><?php echo $resultadoserie['synopse'];?></span>
+			<br>
+			<br>
+			<br>
+			<br>
 			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
@@ -59,5 +73,18 @@
 		}
 		</style>
 
+		</div>
+
+	<div class="bottom_lol">
+		<center>
+		<a class="ativo">Sobre</a>
+		<a>Episodios</a>
+		<a>Séries Semelhantes</a>
+		</center>
 	</div>
+
+	</div>
+
+
+
 	<?php } ?>

@@ -920,3 +920,29 @@ button{
 .video-js .vjs-control-bar{
     background: rgba(0,0,0,.50) !important;
 }
+
+.bottom_lol{
+    width: 100%;
+    bottom: 0;
+    height: 40px;
+    background: rgba(0,0,0,.50);
+    z-index: 1000;
+    position: absolute;
+}
+
+.bottom_lol .ativo{
+    border-bottom: 3px solid #e50914;
+}
+
+.bottom_lol a{
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    top: 15px;
+    margin-left: 10px;
+}
+
+.bottom_lol a:hover{
+    border-bottom: 3px solid #e50914;
+}
