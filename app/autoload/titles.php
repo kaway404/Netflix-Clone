@@ -20,6 +20,11 @@ elseif(isset($_COOKIE['iduser']) && (isset($_COOKIE['cry']) )){
 		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
 	}
 	else if(empty($_COOKIE['perfil'])){
+		echo '<title>Netflix</title>';
+		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
+	}
+	else if(empty($_COOKIE['createprofile'])){
+		echo '<title>Netflix</title>';
 		echo '<link rel="stylesheet" type="text/css" href="/app/styles/darkness.css?v=1.0">';
 	}
 	else{

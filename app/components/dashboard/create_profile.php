@@ -6,8 +6,9 @@
 	</div>
 
 	<div class="center quem_assistir">
-		<h1>Criar um perfil</h1>
-
+		<h1>Adicionar perfil</h1>
+		<h2>Adicione um perfil Netflix para outra pessoa.</h2>
+		<div id="entry">
 		<center>
 		<?php
 		$iduser = $_COOKIE['iduser'];
@@ -20,15 +21,17 @@
        	}
 		 else{ ?>
 		<form>
-		<li class="avatar1">
+		<li class="avatar1 criar">
 		<br>
 		<input type="text" id="name" placeholder="Nome"/>
 		</li>
+	</div>
 		<center>
-		<button class="gerenc" id="createprofile" style="top: 14vw; left: 4.5vw">Criar</button>
+		<button class="gerenc" id="createprofile" style="top: 5vw; left: 4.5vw">Criar</button>
+		<br>
+		<a href="/browse"><button style="color: #333; background: #fff; left: -4.9vw; top: 2vw" class="gerenc">Voltar</button></a>
 		</center>
 	</form>
-			<a href="/browse"><button style="color: #333; background: #fff; left: -6vw; top: 11vw" class="gerenc">Voltar</button></a>
 <br>
 		<div id="message"></div>
 <br>

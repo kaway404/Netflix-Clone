@@ -324,6 +324,12 @@ button{
     font-weight: 400;
 }
 
+.quem_assistir h2{
+    text-align: center;
+    font-size: 1.3vw;
+    color: #666;
+}
+
 .quem_assistir li{
     height: 140px;
     width: 140px;
@@ -391,12 +397,48 @@ button{
 /*Criar perfil*/
 
 .quem_assistir input{
-    width: 250px;
+    width: 18em;
+    height: 2em;
+    background: #666;
+    border: 1px solid transparent;
+    margin: 0 .8em 0 0;
+    padding: .2em .6em;
+    color: #fff;
+    font-size: 1.3vw;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-indent: .1vw;
     position: relative;
-    top: 150px;
-    left: -60px;
-    height: 25px;
-    padding-left: 10px;
+    left: 9vw;
+    top: 1vw;
+}
+
+.quem_assistir input::placeholder{
+    color: #eee;
+}
+
+.quem_assistir input:-ms-input-placeholder{
+    color: #eee;
+}
+
+.quem_assistir input::-ms-input-placeholder{
+    color: #eee;
+}
+
+.quem_assistir .criar{
+    height: 8vw;
+    width: 8vw;
+    max-height: 180px;
+    max-width: 180px;
+    min-height: 80px;
+    min-width: 80px;
+    left: -15vw;
+    border: .3em solid transparent;
+}
+
+.quem_assistir .criar:hover{
+    border: .3em solid transparent;
 }
 
 .quem_assistir #message{
@@ -468,4 +510,14 @@ button{
     height: 100px;
     position: relative;
     margin: 200px 50px;
+}
+
+#entry{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5vw;
+    position: relative;
+    top: 2vw;
+    width: 40vw;
+    margin: 0px auto;
 }
