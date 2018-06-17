@@ -677,15 +677,16 @@ button{
 
 .themes{
     width: 345px;
-    height: auto;
+    height: 170px;
     background-color: rgba(0,0,0,.9);
     line-height: 21px;
     border: solid 1px rgba(255,255,255,.15);
-    position: relative;
+    position: absolute;
     left: 130px;
-    bottom: 35px;
+    bottom: -135px;
     display: none;
     transition: 1s;
+    z-index: 1000;
 }
 
 .themes a{
@@ -862,7 +863,7 @@ button{
     background-image: linear-gradient(to right,#000,transparent);
     top: 0;
     bottom: 0;
-    left: 120%;
+    left: 110%;
     width: 275px;
 }
 

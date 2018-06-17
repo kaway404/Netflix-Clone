@@ -25,7 +25,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
 	<h1 id="what_is">Séries - <?php echo $resultado['nome'];?></h1> 
 	<div style="top: 20px; left: 0;" class="label" role="button" tabindex="0" aria-haspopup="true" aria-expanded="false">Gêneros<span class="arrow"></span></div>
 
-	<div class="themes" style="top: 20px; left: 0;">
+	<div class="themes" style="top: 80px; left: 5px;">
 		<uL>
 		<?php
 		$result_genero = "SELECT * FROM genre WHERE id";
