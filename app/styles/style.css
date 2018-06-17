@@ -352,14 +352,15 @@ button{
     display: inline-block;
     margin-left: 30px;
     left: -30px;
+    color: grey;
 }
 
 .quem_assistir li:hover{
     border: .3em solid #fff;
+    color: #fff !important;
 }
 
 .quem_assistir li p{
-    color: grey;
     position: relative;
     top: 145px;
     font-size: 1.2em;
