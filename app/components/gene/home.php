@@ -41,7 +41,7 @@ $resultado = mysqli_fetch_assoc($resultado_generoa);
 	</div>
 
 	<?php
-		$result_filme = "SELECT * FROM series WHERE tipo = 2 and genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero'  ";
+		$result_filme = "SELECT * FROM series WHERE genre1 = '$idgenero' or genre2 = '$idgenero' or genre3 = '$idgenero' or genre4 = '$idgenero' or genre5 = '$idgenero'  ";
         $resultado_filme = mysqli_query($conn, $result_filme);
         $resultado = mysqli_fetch_assoc($resultado_filme);
         foreach ($resultado_filme as $resultado_filme => $resultado_filmes) {
