@@ -31,6 +31,4 @@
 		background-image: url(<?php echo $filme['background'];?>);
 	}
 	</style>
-
-	<?php } ?>
-
+<?php }?>

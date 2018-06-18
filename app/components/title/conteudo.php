@@ -90,15 +90,19 @@
 			?>
 			<a href="/watch/<?php echo $resultado_episodes['id']; ?>">
 			<div id="serie_ep">
-				<div id="imgeps2"></div>
+				<div id="imgeps2<?php echo $resultado_episodes['id'];?>"></div>
 				<div id="descrt_filme"><p><?php echo $resultado_episodes['nome']; ?></p></div>
 				<div id="back_filme2"></div>
 				<div id="play"><button><i class="fas fa-play"></i></button></div>
 			</div>
 			</a>
 			<style>
-			#imgeps2{
+			#imgeps2<?php echo $resultado_episodes['id'];?>{
 				background-image: url('<?php echo $resultadoserie['cover']; ?>');
+				  width: 100%;
+				    height: 100%;
+				    position: absolute;
+				    background-size: cover;
 			}
 			</style>
 		<?php } ?>
@@ -122,15 +126,19 @@
 			?>
 			<a href="/title/<?php echo $resultado_seriets['url']; ?>">
 			<div id="serie_ep">
-				<div id="img_ep"></div>
+				<div id="img_ep<?php echo $resultado_episodes['id'];?>"></div>
 				<div id="descrt_filme"><p><?php echo $resultado_seriets['name']; ?></p></div>
 				<div id="back_filme"></div>
 				<div id="play"><button><i class="fas fa-play"></i></button></div>
 			</div>
 			</a>
 			<style>
-			#img_ep{
+			#img_ep<?php echo $resultado_episodes['id'];?>{
 				background-image: url('<?php echo $resultado_seriets['cover']; ?>');
+				 width: 100%;
+			    height: 100%;
+			    position: absolute;
+			    background-size: cover;
 			}
 			</style>
 		<?php } ?>
