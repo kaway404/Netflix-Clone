@@ -116,7 +116,7 @@
         ?>
 	<div id="semelhantes2">
 		<div id="scroll">
-			<div id="info"><h1>Semelhants a <?php echo $resultadoseriet['name'];?></h1></div>
+			<div id="info"><h1>Semelhants a <?php echo $resultadoserie['name'];?></h1></div>
 			<?php
 			 foreach ($resultado_seriet as $resultado_seriet => $resultado_seriets) {
 			?>
