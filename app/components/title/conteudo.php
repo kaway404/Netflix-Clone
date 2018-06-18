@@ -75,16 +75,105 @@
 
 		</div>
 
+	<?php
+		$idhaha = $_GET['id'];
+		$result_episode = "SELECT * FROM videos WHERE idserie = '$idhaha'";
+        $resultado_episode = mysqli_query($conn, $result_episode);
+        $resultadoepisode = mysqli_fetch_assoc($resultado_episode);
+        if(isset($resultadoserie)){
+        ?>
+	<div id="episodios">
+		<div id="scroll">
+			<div id="info"><h1>Episodios de <?php echo $resultadoserie['name'];?></h1></div>
+			<?php
+			 foreach ($resultado_episode as $resultado_episode => $resultado_episodes) {
+			?>
+			<a href="/watch/<?php echo $resultado_episodes['id']; ?>">
+			<div id="serie_ep">
+				<div id="imgeps2"></div>
+				<div id="descrt_filme"><p><?php echo $resultado_episodes['nome']; ?></p></div>
+				<div id="back_filme2"></div>
+				<div id="play"><button><i class="fas fa-play"></i></button></div>
+			</div>
+			</a>
+			<style>
+			#imgeps2{
+				background-image: url('<?php echo $resultadoserie['cover']; ?>');
+			}
+			</style>
+		<?php } ?>
+		</div>
+	</div>
+<?php } ?>
+
+<?php
+		$genres = 1;
+		$idhaha = $_GET['id'];
+		$result_seriet = "SELECT * FROM series WHERE url <> '$idhaha' and genre1 = '$genres' or genre2 = '$genres' or genre3 = '$genres' or genre4 = '$genres' or genre5 = '$genres' ";
+        $resultado_seriet = mysqli_query($conn, $result_seriet);
+        $resultadoseriet = mysqli_fetch_assoc($resultado_seriet);
+        if(isset($resultadoseriet)){
+        ?>
+	<div id="semelhantes2">
+		<div id="scroll">
+			<div id="info"><h1>Semelhants a <?php echo $resultadoseriet['name'];?></h1></div>
+			<?php
+			 foreach ($resultado_seriet as $resultado_seriet => $resultado_seriets) {
+			?>
+			<a href="/title/<?php echo $resultado_seriets['url']; ?>">
+			<div id="serie_ep">
+				<div id="img_ep"></div>
+				<div id="descrt_filme"><p><?php echo $resultado_seriets['name']; ?></p></div>
+				<div id="back_filme"></div>
+				<div id="play"><button><i class="fas fa-play"></i></button></div>
+			</div>
+			</a>
+			<style>
+			#img_ep{
+				background-image: url('<?php echo $resultado_seriets['cover']; ?>');
+			}
+			</style>
+		<?php } ?>
+		</div>
+	</div>
+<?php } ?>
+
 	<div class="bottom_lol">
 		<center>
-		<a class="ativo">Sobre</a>
-		<a>Episodios</a>
-		<a>Séries Semelhantes</a>
+		<a class="ativo" id="sobre">Sobre</a>
+		<a id="epi">Episodios</a>
+		<a id="semelhantes">Séries Semelhantes</a>
 		</center>
 	</div>
 
 	</div>
 
+	<script type="text/javascript">
+		var info = document.getElementById('sobre');
+		var ep = document.getElementById('epi');
+		var semelhantes = document.getElementById('semelhantes');
+		$('#epi').click(function(){
+		$("#episodios").fadeIn(600);
+		$("#semelhantes2").fadeOut(600);
+		ep.style = 'border-bottom: 3px solid #e50914;';
+		info.style = 'border-bottom: 3px solid transparent;';
+		semelhantes.style = 'border-bottom: 3px solid transparent;'
+	    });
+	    $('#sobre').click(function(){
+		$("#episodios").fadeOut(600);
+		$("#semelhantes2").fadeOut(600);
+		info.style = 'border-bottom: 3px solid #e50914;';
+		ep.style = 'border-bottom: 3px solid transparent;';
+		semelhantes.style = 'border-bottom: 3px solid transparent;'
+	    });
+	     $('#semelhantes').click(function(){
+		$("#semelhantes2").fadeIn(600);
+		$("#episodios").fadeOut(600);
+		semelhantes.style = 'border-bottom: 3px solid #e50914;';
+		ep.style = 'border-bottom: 3px solid transparent;';
+		info.style = 'border-bottom: 3px solid transparent;'
+	    });
+	</script>
 
 
 	<?php } ?>

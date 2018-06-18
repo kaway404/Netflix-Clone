@@ -924,6 +924,7 @@ button{
     background: rgba(0,0,0,.50);
     z-index: 1000;
     position: absolute;
+    z-index: 6000;
 }
 
 .bottom_lol .ativo{
@@ -971,4 +972,122 @@ top: 0px;
     background: rgba(0,0,0,.50) !important;
     border: 1px solid transparent !important;
     border-radius: 20px !important;
+}
+
+#episodios{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,.90);
+    z-index: 3000;
+    display: none;
+}
+
+#semelhantes2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0,0,0,.90);
+    z-index: 3000;
+    display: none;
+    top: 0;
+}
+
+#scroll{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#scroll h1{
+    color: #fff;
+    position: relative;
+    padding: 20px 20px;
+}
+
+#scroll::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar
+{
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+    background-color: #000000;
+}
+
+#serie_ep{
+    width: 150px;
+    height: 120px;
+    background: #555;
+    position: relative;
+    left: 20px;
+    display: inline-block;
+    transition: 1s;
+}
+
+#serie_ep:hover{
+    transform: scale(1.1);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#serie_ep #info{
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: rgba(0,0,0,.50);
+    width: 100%;
+}
+
+#serie_ep #back_filme:hover + #play{
+    opacity: 1;
+}
+
+#serie_ep #play{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+}
+
+#serie_ep #play button{
+    position: relative;
+    top: 32px;
+    left: 32%;
+    background: rgba(0,0,0,.50);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+}
+
+#serie_ep #play i{
+    color: #fff;
+    font-size: 23px;
+}
+
+#img_ep{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+}
+
+#imgeps2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
 }

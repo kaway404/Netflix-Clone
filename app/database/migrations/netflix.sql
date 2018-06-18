@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.1
+-- version 4.8.0.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 17-Jun-2018 às 22:16
--- Versão do servidor: 10.1.33-MariaDB
--- PHP Version: 7.2.6
+-- Generation Time: 18-Jun-2018 às 18:26
+-- Versão do servidor: 10.1.32-MariaDB
+-- PHP Version: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -110,8 +110,6 @@ INSERT INTO `perfil` (`id`, `iduser`, `name`) VALUES
 (22, 13, 'hrear'),
 (23, 14, 'Alexandre'),
 (24, 15, 'Daniel'),
-(25, 11, 'JoÃ£o'),
-(26, 11, 'Mario'),
 (27, 16, 'm.m#8891');
 
 -- --------------------------------------------------------
@@ -156,7 +154,8 @@ CREATE TABLE `series` (
 --
 
 INSERT INTO `series` (`id`, `url`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
-(1, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', 'Rick and Morty', 'Depois que Rick vende uma arma a um assassino alienígena para bancar sua tarde de jogos eletrônicos, Morty é obrigado a impedir que o tal ET cometa um crime.', 'https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/c8/Rick_and_Morty_logo.png', 'https://occ-0-428-185.1.nflxso.net/art/17dbb/5a12ebd64f1438514c23b6255eb8b6640cd17dbb.webp', 'https://occ-0-428-185.1.nflxso.net/art/a957e/96e1105e81924f1fed3b33be93d82fd5d53a957e.webp', '', '2018', '2018', 1, 3, 4, 0, 0, 2);
+(1, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', 'Rick and Morty', 'Depois que Rick vende uma arma a um assassino alienígena para bancar sua tarde de jogos eletrônicos, Morty é obrigado a impedir que o tal ET cometa um crime.', 'https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/c8/Rick_and_Morty_logo.png', 'https://occ-0-428-185.1.nflxso.net/art/17dbb/5a12ebd64f1438514c23b6255eb8b6640cd17dbb.webp', 'https://occ-0-428-185.1.nflxso.net/art/a957e/96e1105e81924f1fed3b33be93d82fd5d53a957e.webp', '', '2018', '2018', 1, 3, 4, 0, 0, 2),
+(3, '9d90636d2ca5751ec065612e74186af06d4bb979', 'Naruto', 'Naruto', 'https://img00.deviantart.net/0385/i/2008/197/7/0/naruto_logo_by_davinciartiste.png', 'http://wallpapercave.com/wp/wc1683969.jpg', 'http://fc08.deviantart.net/fs70/i/2013/244/6/2/naruto_cover_66_by_darkmaza-d6kn7l0.png', '', '2018', '2018', 1, 3, 4, 0, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -194,11 +193,20 @@ INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `ad
 
 CREATE TABLE `videos` (
   `id` int(11) NOT NULL,
-  `idserie` int(11) NOT NULL,
+  `idserie` varchar(255) NOT NULL,
   `nome` text NOT NULL,
   `foto` text NOT NULL,
-  `season` varchar(200) NOT NULL
+  `season` varchar(200) NOT NULL,
+  `url` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `videos`
+--
+
+INSERT INTO `videos` (`id`, `idserie`, `nome`, `foto`, `season`, `url`) VALUES
+(1, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', '01', '', '1', 'https://r1---sn-bg0e7n7y.googlevideo.com/videoplayback?requiressl=yes&id=3dbfcd746b2b8f21&itag=18&source=blogger&app=blogger&ip=0.0.0.0&ipbits=0&expire=1531423984&sparams=expire,id,ip,ipbits,itag,mip,mm,mn,ms,mv,pl,requiressl,sc,source&signature=58D1E0913B68EACAB1DA8C51204E89F39D13B82C.65F1B781C302045879232F2A151723296EDBAB4D&key=cms1&cms_redirect=yes&mip=2804:d57:1a02:ae00:e916:9093:18d3:a44&mm=30&mn=sn-bg0e7n7y&ms=nxu&mt=1529276417&mv=m&pl=40&sc=yes'),
+(2, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', '02', '', '1', 'https://r1---sn-bg0e7n7y.googlevideo.com/videoplayback?requiressl=yes&id=3dbfcd746b2b8f21&itag=18&source=blogger&app=blogger&ip=0.0.0.0&ipbits=0&expire=1531423984&sparams=expire,id,ip,ipbits,itag,mip,mm,mn,ms,mv,pl,requiressl,sc,source&signature=58D1E0913B68EACAB1DA8C51204E89F39D13B82C.65F1B781C302045879232F2A151723296EDBAB4D&key=cms1&cms_redirect=yes&mip=2804:d57:1a02:ae00:e916:9093:18d3:a44&mm=30&mn=sn-bg0e7n7y&ms=nxu&mt=1529276417&mv=m&pl=40&sc=yes');
 
 --
 -- Indexes for dumped tables
@@ -266,7 +274,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT for table `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `season`
@@ -278,7 +286,7 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT for table `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
@@ -290,7 +298,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `videos`
 --
 ALTER TABLE `videos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
