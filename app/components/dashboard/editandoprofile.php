@@ -21,14 +21,14 @@
 		?>
 		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
 		<li class="avatar1">
-		<p><?php echo $resultado_perfils['name'];?></p>
+		<p><?php echo substr($resultado_perfils['name'], 0, 13);?></p>
 		</li>
 		<?php } ?>
 		</center>
 
 	</div>
 <center>
-	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc">Voltar</button></a>
+	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc" id="voltar_a">Voltar</button></a>
 	<a href="/deleteprofile/<?php echo $idperfil;?>"><button style="color: #333; background: #fff; left: -10px" class="gerenc">Deletar perfil</button></a>
 </center>
 
