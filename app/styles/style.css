@@ -334,8 +334,8 @@ button{
 }
 
 .quem_assistir li{
-    height: 10vw;
-    width: 10vw;
+    height: 140px;
+    width: 140px;
     max-height: 200px;
     max-width: 200px;
     min-height: 84px;
@@ -364,7 +364,7 @@ button{
 
 .quem_assistir li p{
     position: relative;
-    top: 10vw;
+    top: 145px;
     font-size: 1.2em;
 }
 
@@ -388,7 +388,7 @@ button{
     background: transparent;
     color: grey;
     position: relative;
-    top: -9vw;
+    top: 3vw;
     margin: 0px auto;
 }
 
@@ -402,7 +402,7 @@ button{
 
 .quem_assistir input{
     width: 18em;
-    height: 3vw;
+    height: 2em;
     background: #666;
     border: 1px solid transparent;
     margin: 0 .8em 0 0;
@@ -416,12 +416,6 @@ button{
     position: relative;
     left: 9vw;
     top: 1vw;
-}
-
-#voltar_a:hover{
-    background: #e50914 !important;
-    border: 1px solid transparent !important;
-    color: #fff !important;
 }
 
 .quem_assistir input::placeholder{
@@ -446,6 +440,13 @@ button{
     left: -15vw;
     border: .3em solid transparent;
 }
+
+#voltar_a:hover{
+    background: #e50914 !important;
+    border: 1px solid transparent !important;
+    color: #fff !important;
+}
+
 
 .quem_assistir .criar:hover{
     border: .3em solid transparent;
