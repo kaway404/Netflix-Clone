@@ -107,7 +107,7 @@
 <?php } ?>
 
 <?php
-		$genres = 1;
+		$genres = $resultadoserie['genre1'];
 		$idhaha = $_GET['id'];
 		$result_seriet = "SELECT * FROM series WHERE url <> '$idhaha' and genre1 = '$genres' or genre2 = '$genres' or genre3 = '$genres' or genre4 = '$genres' or genre5 = '$genres' ";
         $resultado_seriet = mysqli_query($conn, $result_seriet);
