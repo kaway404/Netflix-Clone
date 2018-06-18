@@ -19,14 +19,14 @@
 		?>
 		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
 		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo substr($resultado_perfils['name'], 0, 15);?></p>
+		<p><?php echo substr($resultado_perfils['name'], 0, 13);?></p>
 		</li></a>
 		<?php } ?>
 		<?php }
 		else{?>
 		<?php foreach ($resultado_perfil as $resultado_perfil => $resultado_perfils) {?>
 		<a href="/swift/<?php echo $resultado_perfils['id'];?>"><li class="avatar1">
-		<p><?php echo substr($resultado_perfils['name'], 0, 15);?></p>
+		<p><?php echo substr($resultado_perfils['name'], 0, 13);?></p>
 		</li></a>
 		<?php } ?>
 		<a href="/createprofile"><li class="added">
