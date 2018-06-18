@@ -29,7 +29,7 @@
 		<center>
 		<button class="gerenc" id="createprofile" style="top: 60px; left: 20px">Criar</button>
 	</form>
-	<a href="/browse"><button style="color: #333; background: #fff; top: 60px; left: 20px" class="gerenc">Voltar</button></a>
+	<a href="/browse"><button style="color: #333; background: #fff; top: 60px; left: 20px" class="gerenc" id="voltar_a">Voltar</button></a>
 	<div id="message"></div>
 </center>
 <br>

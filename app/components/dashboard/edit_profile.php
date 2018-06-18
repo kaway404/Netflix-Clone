@@ -30,7 +30,7 @@
 
 	</div>
 <center>
-	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc">OK</button></a>
+	<a href="/browse"><button style="color: #333; background: #fff; left: -10px" class="gerenc" id="voltar_a">OK</button></a>
 </center>
 
 <?php } } ?>

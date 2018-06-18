@@ -402,7 +402,7 @@ button{
 
 .quem_assistir input{
     width: 18em;
-    height: 2em;
+    height: 3vw;
     background: #666;
     border: 1px solid transparent;
     margin: 0 .8em 0 0;
@@ -416,6 +416,12 @@ button{
     position: relative;
     left: 9vw;
     top: 1vw;
+}
+
+#voltar_a:hover{
+    background: #e50914 !important;
+    border: 1px solid transparent !important;
+    color: #fff !important;
 }
 
 .quem_assistir input::placeholder{
