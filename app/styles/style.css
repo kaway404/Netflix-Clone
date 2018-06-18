@@ -334,8 +334,8 @@ button{
 }
 
 .quem_assistir li{
-    height: 140px;
-    width: 140px;
+    height: 10vw;
+    width: 10vw;
     max-height: 200px;
     max-width: 200px;
     min-height: 84px;
@@ -364,7 +364,7 @@ button{
 
 .quem_assistir li p{
     position: relative;
-    top: 145px;
+    top: 10vw;
     font-size: 1.2em;
 }
 
@@ -388,7 +388,7 @@ button{
     background: transparent;
     color: grey;
     position: relative;
-    top: 3vw;
+    top: -3vw;
     margin: 0px auto;
 }
 
