@@ -907,18 +907,14 @@ button{
 
 #watch .video-js{
     width: 100%;
-    position: fixed;
-    height: 60%;
+    position: relative;
+    height: 500px;
 }
 
 .video-js .vjs-big-play-button{
     position: relative;
     left: 45% !important;
     top: 40% !important;
-}
-
-.video-js .vjs-control-bar{
-    background: rgba(0,0,0,.50) !important;
 }
 
 .bottom_lol{
@@ -945,4 +941,34 @@ button{
 
 .bottom_lol a:hover{
     border-bottom: 3px solid #e50914;
+}
+
+.vjs-control-bar{
+    width: 100% !important;
+    height: 30px !important;
+    background: #141414 !important;
+    position: relative;
+    margin: 0px auto;
+}
+
+#infowatch{
+width: 100%;
+height: 200px;
+background: #151515;
+position: relative;
+top: 0px;
+}
+
+#infowatch span{
+    color: #fff;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 23px;
+}
+
+.video-js .vjs-big-play-button{
+    background: rgba(0,0,0,.50) !important;
+    border: 1px solid transparent !important;
+    border-radius: 20px !important;
 }
