@@ -19,3 +19,5 @@ Prints do layout
 [Página Editar]
 
 ![alt text](https://github.com/kaway404/Netflix-Clone/blob/master/apresentar/editando3.png?raw=true)
+
+Versão do PHP 7.X
