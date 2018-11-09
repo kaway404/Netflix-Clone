@@ -42,7 +42,7 @@ if(isset($filme)){?>
 <h1 class="original">ORIGINAL NETFLIX</h1>
 <div class="slider-item">
   <?php foreach ($resultado_filme as $resultado_filme => $resultado_filmes): ?>   
-  <div class="slider-t" data-id="<?php echo $resultado_filmes['id'];?>">
+  <div class="slider-t" id="slider-itemb<?php echo $resultado_filmes['id'];?>" data-id="<?php echo $resultado_filmes['id'];?>">
     <div class="slider-b" data-id="<?php echo $resultado_filmes['id'];?>" style="background-image: url('/app/img/<?php echo $resultado_filmes['cover'];?>'">
       <div class="hover-item" id="hover_item<?php echo $resultado_filmes['id'];?>" data-id="<?php echo $resultado_filmes['id'];?>">
         <p style="bottom: 80%"><?php echo $resultado_filmes['name'];?>
@@ -129,14 +129,14 @@ if(isset($filme)){?>
   }
 
   @media only screen and (max-width: 1494px) {
-    .slider-b{
-      width: 95% !important;
+    .slider-t{
+      width: width 250px !important;
     }
   }
 
    @media only screen and (max-width: 974px) {
-    .slider-b{
-      width: 80% !important;
+    .slider-t{
+      width: 200px !important;
     }
   }
 </style>
@@ -173,7 +173,7 @@ if(isset($filme)){?>
 
   $(".vermais").click(function(){
     let showid = $(this).data("showid");
-    let htmld = "#hover_item" + showid;
+    let htmld = "#slider-itemb" + showid;
     $(htmld).css("transform", "scale(1)");
     $(htmld).css("margin-left", "0px");
     $(htmld).css("margin-right", "0px");
