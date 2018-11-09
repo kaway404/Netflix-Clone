@@ -20,4 +20,8 @@ Prints do layout
 
 ![alt text](https://github.com/kaway404/Netflix-Clone/blob/master/apresentar/editando3.png?raw=true)
 
+[Dashboard WIP]
+
+![alt text](https://github.com/kaway404/Netflix-Clone/blob/master/apresentar/dashboard_wip.png?raw=true)
+
 Versão do PHP 7.X
