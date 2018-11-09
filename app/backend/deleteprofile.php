@@ -7,7 +7,7 @@ $iduser = $_COOKIE['iduser'];
 $idprofile = $_GET['id'];
 
 
-	$result_usuario = "SELECT * FROM perfil WHERE iduser = '$iduser' and id = '$idprofile' LIMIT 1";
+	$result_usuario = "SELECT * FROM perfil WHERE iduser = '$iduser' LIMIT 1";
     $resultado_usuario = mysqli_query($conn, $result_usuario);
     $resultado = mysqli_fetch_assoc($resultado_usuario);
     $totaldeperfil = mysqli_num_rows($resultado_usuario);
@@ -16,7 +16,7 @@ $idprofile = $_GET['id'];
     $sql = "DELETE FROM perfil WHERE iduser = '$iduser'and id = '$idprofile' ";
 
 			if (mysqli_query($conn, $sql)) {
-			    echo '<script>location.href="/browse";</script>';
+			    echo '<script>location.href="/editprofiles";</script>';
 			} else {
 			    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 			}

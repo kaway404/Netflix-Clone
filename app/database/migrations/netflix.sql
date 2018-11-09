@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 18-Jun-2018 às 18:26
--- Versão do servidor: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Generation Time: 09-Nov-2018 às 20:01
+-- Versão do servidor: 10.1.35-MariaDB
+-- versão do PHP: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -52,7 +52,8 @@ CREATE TABLE `filmes` (
 --
 
 INSERT INTO `filmes` (`id`, `url`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
-(1, '928c91c35ee7f1feb15ee54f70ccde83748a84af', 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', 'https://occ-0-428-185.1.nflxso.net/art/c229d/44d4576fa85a1a1797d3092a820f9026e2ac229d.webp', 'https://occ-0-428-185.1.nflxso.net/art/8871f/9f9b44dd38f1147112d395c99050aa0ea398871f.webp', 'https://occ-0-428-185.1.nflxso.net/art/0eec4/f73089a3091bd5e16e43a2e8b21b6e96c020eec4.jpg', '', '2018', '2018', 3, 0, 0, 0, 0, 1);
+(1, '928c91c35ee7f1feb15ee54f70ccde83748a84af', 'O plano imperfeito', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', '/logo.png', 'back.jpeg', 'punch.jpg', '', '2018', '2018', 3, 0, 0, 0, 0, 1),
+(2, '928c91c35ee7f1feb15ee54f70ccde83748a84ad', 'One Punch Man', 'Desesperados por um pouco de sossego, dois assistentes exaustos unem forças para fazer com que seus chefes workaholics se apaixonem.', '/logo.png', 'back.jpeg', 'punch.jpg', '', '2018', '2018', 3, 0, 0, 0, 0, 1);
 
 -- --------------------------------------------------------
 
@@ -104,13 +105,17 @@ CREATE TABLE `perfil` (
 --
 
 INSERT INTO `perfil` (`id`, `iduser`, `name`) VALUES
-(16, 11, 'Alexandre'),
 (19, 12, 'ww'),
 (21, 13, 'anelise 3131'),
 (22, 13, 'hrear'),
 (23, 14, 'Alexandre'),
 (24, 15, 'Daniel'),
-(27, 16, 'm.m#8891');
+(27, 16, 'm.m#8891'),
+(29, 17, 'Kise'),
+(31, 18, ':3'),
+(32, 18, 'wow'),
+(33, 18, 'haha'),
+(44, 11, 'aa');
 
 -- --------------------------------------------------------
 
@@ -154,8 +159,8 @@ CREATE TABLE `series` (
 --
 
 INSERT INTO `series` (`id`, `url`, `name`, `synopse`, `logo`, `background`, `cover`, `video`, `year`, `age`, `genre1`, `genre2`, `genre3`, `genre4`, `genre5`, `tipo`) VALUES
-(1, '2339dd8aa7ad185295dc30d6f3fcf209f6eacaa6', 'Rick and Morty', 'Depois que Rick vende uma arma a um assassino alienígena para bancar sua tarde de jogos eletrônicos, Morty é obrigado a impedir que o tal ET cometa um crime.', 'https://vignette.wikia.nocookie.net/fictionalcrossover/images/c/c8/Rick_and_Morty_logo.png', 'https://occ-0-428-185.1.nflxso.net/art/17dbb/5a12ebd64f1438514c23b6255eb8b6640cd17dbb.webp', 'https://occ-0-428-185.1.nflxso.net/art/a957e/96e1105e81924f1fed3b33be93d82fd5d53a957e.webp', '', '2018', '2018', 1, 3, 4, 0, 0, 2),
-(3, '9d90636d2ca5751ec065612e74186af06d4bb979', 'Naruto', 'Naruto', 'https://img00.deviantart.net/0385/i/2008/197/7/0/naruto_logo_by_davinciartiste.png', 'http://wallpapercave.com/wp/wc1683969.jpg', 'http://fc08.deviantart.net/fs70/i/2013/244/6/2/naruto_cover_66_by_darkmaza-d6kn7l0.png', '', '2018', '2018', 1, 3, 4, 0, 0, 2);
+(3, '9d90636d2ca5751ec065612e74186af06d4bb979', 'Naruto', 'Guiado pelo espírito demoníaco dentro dele, o órfão Naruto aprende a controlar seus poderes como um ninja nesta série de aventura anime.', 'Naruto_logo.svg', 'nb.jpg', 'naruto.webp', '', '2008', '2008', 1, 3, 4, 0, 0, 2),
+(4, '9d90636d2ca5751ec065612e74186af06d4bb979', 'Naruto', 'Guiado pelo espírito demoníaco dentro dele, o órfão Naruto aprende a controlar seus poderes como um ninja nesta série de aventura anime.', 'Naruto_logo.svg', 'nb.jpg', 'naruto.webp', '', '2008', '2008', 1, 3, 4, 0, 0, 2);
 
 -- --------------------------------------------------------
 
@@ -183,7 +188,9 @@ INSERT INTO `users` (`id`, `cry`, `email`, `password`, `username`, `banned`, `ad
 (13, 'netflix_d87d1f989079ce85658bd55400c5545f93381bc1', 'anelisenaiara@hotmail.com', 'c3cdda1f9e5d093622cda7ca2de3cd116f6d5aa0', '', 0, 0),
 (14, 'netflix_b7e64bcb49fdb3f54dcdbf4570b6fd1b22e7b97f', 'what@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0),
 (15, 'netflix_2134d9478d2db73baa3eb632e72d5596ee6bb87d', 'danielf@gmail.com', 'f700a6934e78cd908cb5665cd84f89318bfa2d43', '', 0, 0),
-(16, 'netflix_8dbcd879373fff5908917a3b2a32f896d04f26c8', 'm.m#8891@gmail.com', '8dbcd879373fff5908917a3b2a32f896d04f26c8', '', 0, 0);
+(16, 'netflix_8dbcd879373fff5908917a3b2a32f896d04f26c8', 'm.m#8891@gmail.com', '8dbcd879373fff5908917a3b2a32f896d04f26c8', '', 0, 0),
+(17, 'netflix_40e7e6ab9c9bc645c892c81530d4d95fd8d74b25', 'ruosena@gmail.com', '752b27f205f23c37442f8ef98ccad21fc5cc0de8', '', 0, 0),
+(18, 'netflix_d846e1f6dca10e9e0a85940e1ff8ea32c752ae62', 'hello@hotmail.com', 'a0b48bf6735b085374fa984535372a8025210e45', '', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -262,7 +269,7 @@ ALTER TABLE `videos`
 -- AUTO_INCREMENT for table `filmes`
 --
 ALTER TABLE `filmes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `genre`
@@ -274,7 +281,7 @@ ALTER TABLE `genre`
 -- AUTO_INCREMENT for table `perfil`
 --
 ALTER TABLE `perfil`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `season`
@@ -286,13 +293,13 @@ ALTER TABLE `season`
 -- AUTO_INCREMENT for table `series`
 --
 ALTER TABLE `series`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `videos`

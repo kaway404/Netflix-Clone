@@ -42,7 +42,7 @@
 <a href="/title/<?php echo $resultado_filmes['url'];?>">
 <div id="filmes" style="top: 0; left: 0vw;">
 <div id="avata_filmes">
-	<img src="<?php echo $resultado_filmes['cover'];?>"/>
+	<img src="/app/img/<?php echo $resultado_filmes['cover'];?>"/>
 	<div id="back_filme"></div>
 	<div id="descrt_filme"><p><?php echo $resultado_filmes['name'];?></p></div>
 	<div id="play"><button><i class="fas fa-play"></i></button></div>

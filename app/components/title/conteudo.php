@@ -33,7 +33,7 @@
 			<button><i class="fas fa-play"></i><span>Assistir</span></button>
 		</div>
 		<div class="info_right">
-			<img src="<?php echo $resultado['background'];?>"/>
+			<img src="/app/img/<?php echo $resultado['background'];?>"/>
 		</div>
 			<div class="bottom_lol">
 		<center>
@@ -69,7 +69,7 @@
 		<style>	
 		.info_right{
 			background-size: cover;
-			background-image: url(<?php echo $resultadoserie['background'];?>);
+			background-image: url(/app/img/<?php echo $resultadoserie['background'];?>);
 		}
 		</style>
 
@@ -98,7 +98,7 @@
 			</a>
 			<style>
 			#imgeps2<?php echo $resultado_episodes['id'];?>{
-				background-image: url('<?php echo $resultadoserie['cover']; ?>');
+				background-image: url('/app/img/<?php echo $resultadoserie['cover']; ?>');
 				  width: 100%;
 				    height: 100%;
 				    position: absolute;
@@ -134,7 +134,7 @@
 			</a>
 			<style>
 			#img_ep<?php echo $resultado_episodes['id'];?>{
-				background-image: url('<?php echo $resultado_seriets['cover']; ?>');
+				background-image: url('/app/img/<?php echo $resultado_seriets['cover']; ?>');
 				 width: 100%;
 			    height: 100%;
 			    position: absolute;
